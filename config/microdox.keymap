@@ -13,7 +13,7 @@
 };
 
 / {
-        behaviors {
+    behaviors {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -24,6 +24,20 @@
             bindings = <&kp>, <&kp>;
         };
     };
+
+    macros {
+        alf: alf {
+            label = "alf";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                ;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -37,7 +51,7 @@
    &kp SQT      &kp COMMA       &kp DOT &kp P   &kp Y           &kp F   &kp G   &kp C           &kp R           &kp L
    &bhm LSHFT A &bhm LCTRL O    &bhm LALT E     &bhm LGUI U     &kp I   &kp D   &bhm RGUI H     &bhm RALT T     &bhm RCTRL N    &bhm RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &kp D   &kp B   &kp M           &kp W           &kp V           &kp Z
-   &kp LGUI     &mo 1           &sk LSHFT                                                       &kp SPACE       &kp BSPC           &kp RALT
+   &kp LGUI     &alf            &sk LSHFT                                                       &kp SPACE       &kp TAB           &kp RGUI
                         >;
                 };
 
