@@ -13,6 +13,17 @@
 };
 
 / {
+        behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
@@ -24,7 +35,7 @@
 //             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
                         bindings = <
    &kp SQT      &kp COMMA       &kp DOT &kp P   &kp Y           &kp F   &kp G   &kp C           &kp R           &kp L
-   &th_bal LSHFT A  &th_bal LCTRL O     &th_bal LALT E      &th_bal LGUI U      &kp I   &kp D   &th_bal RGUI H      &th_bal RALT T      &th_bal RCTRL N   &th_bal RSHFT S
+   &bhm LSHFT A &bhm LCTRL O    &bhm LALT E     &bhm LGUI U     &kp I   &kp D   &bhm RGUI H     &bhm RALT T     &bhm RCTRL N    &bhm RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &kp D   &kp B   &kp M           &kp W           &kp V           &kp Z
    &kp LGUI     &mo 1           &kp LGUI                                &kp SPACE       &mo 2   &kp RALT
                         >;
@@ -37,7 +48,6 @@
 //          &kp LGUI &mo 1 &kp LSHFT &kp SPACE &mo 2 &kp RALT
 //                        >;
 //                };
-
 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
