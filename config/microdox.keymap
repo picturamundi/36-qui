@@ -37,6 +37,16 @@
                 , <&macro_release &kp LGUI>
                 ;
         };
+
+        lst: layer_sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_STICKY_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&sk>;
+        };
     };
 
         keymap {
@@ -44,15 +54,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | NAV | SHFT |   | SPC | SYM  | ALT |
+// |  Q  |  W  |  E  |  R  |  T   |          |  Y  |  U   |  I  |  O  |  P  |
+// |  A  |  S  |  D  |  F  |  G   |          |  H  |  J   |  K  |  L  |  ;  |
+// |  Z  |  X  |  C  |  V  |  B   |          |  N  |  M   |  ,  |  .  |  /  |
+//             | GUI | NAV | SHFT |          | SPC | SYM  | ALT |
                         bindings = <
-   &kp SQT      &kp COMMA       &kp DOT &kp P   &kp Y           &kp F   &kp G   &kp C           &kp R           &kp L
+   &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y   &kp F   &kp G           &kp C           &kp R           &kp L
    &bhm LSHFT A &bhm LCTRL O    &bhm LALT E     &bhm LGUI U     &kp I   &kp D   &bhm RGUI H     &bhm RALT T     &bhm RCTRL N    &bhm RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &kp X   &kp B   &kp M           &kp W           &kp V           &kp Z
-   &kp LGUI     &alf            &sk LSHFT                                                       &kp SPACE       &kp BSPC        &kp RGUI
+   &kp LGUI     &alf            &lst 4 LSHFT                                                       &kp SPACE       &kp BSPC        &kp RGUI
                         >;
                 };
 
@@ -66,10 +76,10 @@
 
                 nav_layer {
 // -----------------------------------------------------------------------------------------
-// |BTCLR|     | ESC |  ~   |     |   | TAB | HOME |  UP  | END | DEL  |
-// | BT1 | GUI | ALT | CTRL | NUM |   |  /  | LEFT | DOWN | RGT | BKSP |
-// | BT2 |     |     |      |     |   |  \  | ENT  |      |     |      |
-//             |     |      |     |   |     |      |      |
+// |BTCLR|     | ESC |  ~   |     |          | TAB | HOME |  UP  | END | DEL  |
+// | BT1 | GUI | ALT | CTRL | NUM |          |  /  | LEFT | DOWN | RGT | BKSP |
+// | BT2 |     |     |      |     |          |  \  | ENT  |      |     |      |
+//             |     |      |     |          |     |      |      |
                         bindings = <
    &bt BT_CLR   &trans      &kp ESC  &kp TILDE &trans     &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
    &bt BT_SEL 0 &kp K_CMENU &kp RALT &kp LCTRL &mo 3      &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
@@ -80,10 +90,10 @@
 
                 sym_layer {
 // -----------------------------------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  {  |  }  | "|" |
-// |     |     |     |     |     |   |  _  |  +  |  [  |  ]  |  \  |
-//             | GUI |     | SPC |   | ENT |     | ALT |
+// |  !  |  @  |  #  |  $  |  %  |          |  ^  |  &  |  *  |  (  |  )  |
+// |     |     |     |     |     |          |  -  |  =  |  {  |  }  | "|" |
+// |     |     |     |     |     |          |  _  |  +  |  [  |  ]  |  \  |
+//             | GUI |     | SPC |          | ENT |     | ALT |
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
    &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE
@@ -96,10 +106,10 @@
 // Leaving it here for completeness.
                 num_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |   |  A  |  7  |  8  |  9  |  D  |
-// |     |     |     |     |     |   |  B  |  4  |  5  |  6  |  E  |
-// |     |     |     |     |     |   |  C  |  1  |  2  |  3  |  F  |
-//             |     |     |     |   |  0  |  .  |     |
+// |     |     |     |     |     |          |  A  |  7  |  8  |  9  |  D  |
+// |     |     |     |     |     |          |  B  |  4  |  5  |  6  |  E  |
+// |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
+//             |     |     |     |          |  0  |  .  |     |
                         bindings = <
    &trans &trans &trans &trans &trans    &kp A  &kp N7  &kp N8 &kp N9 &kp D
    &trans &trans &trans &trans &trans    &kp B  &kp N4  &kp N5 &kp N6 &kp E
