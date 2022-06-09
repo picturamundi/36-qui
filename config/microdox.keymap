@@ -58,11 +58,12 @@
 // |  A  |  S  |  D  |  F  |  G   |          |  H  |  J   |  K  |  L  |  ;  |
 // |  Z  |  X  |  C  |  V  |  B   |          |  N  |  M   |  ,  |  .  |  /  |
 //             | GUI | NAV | SHFT |          | SPC | SYM  | ALT |
+
                         bindings = <
    &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y   &kp F   &kp G           &kp C           &kp R           &kp L
    &bhm LSHFT A &bhm LCTRL O    &bhm LALT E     &bhm LGUI U     &kp I   &kp D   &bhm RGUI H     &bhm RALT T     &bhm RCTRL N    &bhm RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &kp X   &kp B   &kp M           &kp W           &kp V           &kp Z
-   &mo 2        &alf            &lst 1 LSHFT                                                    &kp SPACE       &kp BSPC        &kp RGUI
+   &mo 2        &kp BSPC        &lst 1 LSHFT                                                    &kp SPACE       &alf            &kp RGUI
                         >;
                 };
 
