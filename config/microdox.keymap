@@ -74,10 +74,10 @@
 // | BT2 |     |     |      |     |          |  \  | ENT  |      |     |      |
 //             |     |      |     |          |     |      |      |
                         bindings = <
-   &trans &kp RA(LEFT)     &kp UP      &kp RA(RIGHT)       &kp TILDE &trans        &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
-   &trans &kp LEFT         &kp DOWN    &kp RIGHT           &kp LCTRL &mo 3         &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
-   &trans BT_SEL 1         &trans      &trans              &trans    &trans        &kp BSLH &kp RET  &trans   &trans    &trans
-                        &trans      &trans              &trans       &kp RET   &kp TAB       &trans
+   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp TAB   &kp HOME        &kp UP   &kp END   &kp DEL
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp FSLH  &kp LEFT        &kp DOWN &kp RIGHT &kp BSPC
+   &trans   &trans              &trans          &trans          &trans        &kp BSLH  &kp RET         &trans   &trans    &trans
+                                &trans          &trans          &trans        &kp RET   &kp TAB         &trans
                         >;
                 };
 
