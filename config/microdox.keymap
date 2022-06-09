@@ -53,10 +53,10 @@
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
-// -----------------------------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T   |          |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G   |          |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B   |          |  N  |  M   |  ,  |  .  |  /  |
+// 0-----------------------------------------------------------------------------------------
+// |  '  |  ,  |  .  |  p  |  y   |          |  f  |  g   |  c  |  r  |  l  |
+// |  a  |  o  |  e  |  u  |  i   |          |  d  |  h   |  t  |  n  |  s  |
+// |  ;  |  q  |  j  |  k  |  x   |          |  b  |  m   |  w  |  v  |  z  |
 //             | GUI | NAV | SHFT |          | SPC | SYM  | ALT |
 
                         bindings = <
@@ -74,10 +74,10 @@
 // | BT2 |     |     |      |     |          |  \  | ENT  |      |     |      |
 //             |     |      |     |          |     |      |      |
                         bindings = <
-   &bt BT_CLR   &trans      &kp ESC  &kp TILDE &trans        &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
-   &bt BT_SEL 0 &kp K_CMENU &kp RALT &kp LCTRL &mo 3         &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
-   &bt BT_SEL 1 &trans      &trans   &trans    &trans        &kp BSLH &kp RET  &trans   &trans    &trans
-                            &trans   &trans    &trans        &kp RET   &kp TAB   &trans
+   &bt &kp RA(LEFT)     &kp UP      &kp RA(RIGHT)       &kp TILDE &trans        &kp TAB  &kp HOME &kp UP   &kp END   &kp DEL
+   &bt &kp LEFT         &kp DOWN    &kp RIGHT           &kp LCTRL &mo 3         &kp FSLH &kp LEFT &kp DOWN &kp RIGHT &kp BSPC
+   &bt BT_SEL 1         &trans      &trans              &trans    &trans        &kp BSLH &kp RET  &trans   &trans    &trans
+                        &trans      &trans              &trans       &kp RET   &kp TAB       &trans
                         >;
                 };
 
