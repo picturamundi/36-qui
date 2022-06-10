@@ -10,7 +10,7 @@
 
 / {
 
-        behaviors {
+    behaviors {
 
         phr: positional_hold_right {
             compatible = "zmk,behavior-hold-tap";
@@ -35,7 +35,7 @@
         };
     };
 
-        macros {
+    macros {
 
         lst: layer_sticky_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -72,7 +72,7 @@
    &kp SQT      &kp COMMA       &kp DOT         &kp P      &kp Y        &kp F   &kp G       &kp C           &kp R           &kp L
    &phl LSHFT A &phl LCTRL O    &phl LALT E     &phl LGUI U     &kp I        &kp D   &phr RGUI H     &phr RALT T     &phr RCTRL N    &phr RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K      &kp X        &kp B   &kp M       &kp W           &kp V           &kp Z
-   &bt BT_CLR   &kp BSPC        &sk LSHFT                                                   &kp SPACE       &kp TAB         &kp RGUI
+   &mo 2        &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &kp TAB         &kp RGUI
                         >;
                 };
 

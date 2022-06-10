@@ -14,6 +14,15 @@
 
 / {
     behaviors {
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
+        };
 
         phr: positional_hold_right {
             compatible = "zmk,behavior-hold-tap";
@@ -36,20 +45,21 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <15>, <16>, <17>, <18>, <19>;    // <---[[the W key]]
         };
-
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&kp>;
-        };
         
     };
 
     macros {
+
+        alf: alf {
+            label = "alf";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI>
+                ;
+        };
 
         lst: layer_sticky_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -69,17 +79,6 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        };
-
-        alf: alf {
-            label = "alf";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LGUI>
-                ;
         };
 
     };
