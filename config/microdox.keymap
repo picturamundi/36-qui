@@ -72,7 +72,7 @@
                         bindings = <
    &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y        &kp F   &kp G           &kp C           &kp R           &kp L
    &bhm LSHFT A &bhm LCTRL O    &bhm LALT E     &bhm LGUI U     &kp I        &kp D   &bhm RGUI H     &bhm RALT T     &bhm RCTRL N    &bhm RSHFT S
-   &kp SEMI     &kp Q           &kp J           &kp K           &ght X ESC   &kp B   &kp M           &kp W           &kp V           &kp Z
+   &kp SEMI     &kp Q           &kp J           &kp K           &ght ESC X   &kp B   &kp M           &kp W           &kp V           &kp Z
    &mo 2        &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &alf            &kp RGUI
                         >;
                 };
@@ -84,9 +84,9 @@
 // | BT2 |     |     |      |     |          |  \  | ENT  |      |     |      |
 //             |     |      |     |          |     |      |      |
                         bindings = <
-   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp LS(LC(LA(LG(I))))     &kp LS(LC(LA(LG(U))))   &kp DEL
-   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp FSLH                &kp LS(LC(LA(LG(J))))        &kp LS(LC(LA(LG(K))))     &kp LS(LC(LA(LG(L))))   &kp LC(LA(LG(SEMI)))
-   &trans   &trans              &trans          &trans          &trans        &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp LC(LA(LG(COMMA)))     &kp LC(LA(LG(DOT)))     &trans
+   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(U))))   &kp DEL
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp FSLH                &kp LS(LC(LA(LG(J))))        &ght LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp LC(LA(LG(SEMI)))
+   &trans   &trans              &trans          &trans          &trans        &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
                                 &trans          &trans          &trans        &kp RET   &kp TAB                      &trans
                         >;
                 };
