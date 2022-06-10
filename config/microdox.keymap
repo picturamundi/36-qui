@@ -35,6 +35,29 @@
         };
     };
 
+        macros {
+
+        lst: layer_sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_STICKY_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&sk>;
+        };
+
+        ght: generic_hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GENERIC_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
