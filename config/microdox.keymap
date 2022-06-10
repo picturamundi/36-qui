@@ -84,7 +84,7 @@
 // | BT2 |     |     |      |     |          |  \  | ENT  |      |     |      |
 //             |     |      |     |          |     |      |      |
                         bindings = <
-   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(U))))   &kp DEL
+   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &kp DEL
    &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ght LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp LC(LA(LG(SEMI)))
    &trans   &trans              &trans          &trans          &trans        &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
                                 &trans          &trans          &trans        &kp RET   &kp TAB                      &trans
