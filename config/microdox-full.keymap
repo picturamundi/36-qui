@@ -14,15 +14,6 @@
 
 / {
     behaviors {
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&kp>;
-        };
 
         phr: positional_hold_right {
             compatible = "zmk,behavior-hold-tap";
@@ -44,6 +35,16 @@
             quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <15>, <16>, <17>, <18>, <19>;    // <---[[the W key]]
+        };
+
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&kp>, <&kp>;
         };
         
     };
