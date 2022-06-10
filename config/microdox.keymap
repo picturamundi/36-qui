@@ -28,7 +28,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_RIGHT";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
@@ -39,7 +39,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_LEFT";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <300>;
             quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
