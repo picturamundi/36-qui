@@ -24,15 +24,26 @@
             bindings = <&kp>, <&kp>;
         };
 
-        pht: positional_hold_tap {
+        phr: positional_hold_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
+            label = "POSITIONAL_HOLD_RIGHT";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <10>, <11>, <12>, <13>, <14>;    // <---[[the W key]]
+        };
+
+        phl: positional_hold_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "POSITIONAL_HOLD_LEFT";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <1>;    // <---[[the W key]]
+            hold-trigger-key-positions = <15>, <16>, <17>, <18>, <19>;    // <---[[the W key]]
         };
         
     };
@@ -83,7 +94,7 @@
 
                         bindings = <
    &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y        &kp F   &kp G           &kp C           &kp R           &kp L
-   &bhm LSHFT A &bhm LCTRL O    &bhm LALT E     &bhm LGUI U     &kp I        &kp D   &bhm RGUI H     &bhm RALT T     &bhm RCTRL N    &bhm RSHFT S
+   &phl LSHFT A &phl LCTRL O    &phl LALT E     &phl LGUI U     &kp I        &kp D   &phr RGUI H     &phr RALT T     &phr RCTRL N    &phr RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &ght ESC X   &kp B   &kp M           &kp W           &kp V           &kp Z
    &mo 2        &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &kp TAB         &kp RGUI
                         >;
