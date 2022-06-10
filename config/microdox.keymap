@@ -28,9 +28,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_RIGHT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <150>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <10>, <11>, <12>, <13>, <14>;    // <---[[the W key]]
         };
@@ -39,9 +39,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "POSITIONAL_HOLD_LEFT";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <300>;
-            quick-tap-ms = <150>;
+            flavor = "balanced";
+            tapping-term-ms = <150>;
+            quick-tap-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <15>, <16>, <17>, <18>, <19>;    // <---[[the W key]]
         };
