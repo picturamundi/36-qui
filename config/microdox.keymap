@@ -20,9 +20,21 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        pht: positional_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "POSITIONAL_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <1>;    // <---[[the W key]]
+        };
+
     };
 
     macros {
@@ -87,7 +99,7 @@
    &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &kp LS(LC(LA(LG(SEMI))))
    &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ght LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp RET
    &trans   &trans              &trans          &trans          &trans        &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
-                                &trans          &trans          &trans        &alf                    &kp RET                      &trans
+                                &trans          &trans          &trans        &alf                    &trans                       &trans
                         >;
                 };
 
