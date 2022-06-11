@@ -98,7 +98,7 @@
    &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y        &kp F   &kp G           &kp C           &kp R           &kp L
    &phl LSHFT A &phl LCTRL O    &phl LALT E     &phl LGUI U     &kp I        &kp D   &phr RGUI H     &phr RALT T     &phr RCTRL N    &phr RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &ght ESC X   &kp B   &kp M           &kp W           &kp V           &kp Z
-   &bt BT_CLR   &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &kp TAB         &reset
+   &bt BT_CLR   &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &kp TAB         &mo 2
 
 
                         >;
@@ -127,7 +127,7 @@
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
    &trans    &trans    &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp PIPE
-   &trans    &trans    &trans    &trans    &trans      &trans    &trans    &trans          &trans   &kp BSLH
+   &reset    &bootloader    &trans    &trans    &trans      &trans    &trans    &trans          &bootloader   &reset
                        &kp LGUI  &trans    &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
