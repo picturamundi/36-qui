@@ -71,14 +71,28 @@
             bindings = <&mo>, <&sk>;
         };
 
-        ght: generic_hold-tap {
+        ghr: generic_hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_TAP";
             #binding-cells = <2>;
             tapping-term-ms = <120>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
+            quick_tap_ms = <110>;
+            flavor = "balanced";
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <10>, <11>, <12>, <13>, <14>;
+        };
+
+        ghl: generic_hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GENERIC_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <120>;
+            quick_tap_ms = <110>;
+            flavor = "balanced";
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <15>, <16>, <17>, <18>, <19>;
         };
 
     };
@@ -96,7 +110,7 @@
 
                         bindings = <
    &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y        &kp F   &kp G           &kp C           &kp R           &kp L
-   &phl LSHFT A &phl LCTRL O    &phl LALT E     &phl LGUI U     &kp I        &kp D   &phr RGUI H     &phr RALT T     &phr RCTRL N    &phr RSHFT S
+   &ghl LSHFT A &ghl LCTRL O    &ghl LALT E     &ghl LGUI U     &kp I        &kp D   &ghr RGUI H     &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
    &kp SEMI     &kp Q           &kp J           &kp K           &ght ESC X   &kp B   &kp M           &kp W           &kp V           &kp Z
    &bt BT_CLR   &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &kp TAB         &mo 2
 
