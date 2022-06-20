@@ -12,6 +12,12 @@
     tapping-term-ms = <200>;
 };
 
+&sk {
+    release-after-ms = <1500>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 / {
     behaviors {
         bhm: balanced_homerow_mods {
