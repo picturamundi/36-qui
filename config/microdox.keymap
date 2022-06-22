@@ -19,18 +19,9 @@
 };
 
 / {
-    behaviors {
-        bhm: balanced_homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;    // <---[[moderate duration]]
-            quick-tap-ms = <0>;
-            flavor = "hold-preferred";
-            bindings = <&kp>, <&kp>;
-        };
+    macros {
 
-        ghr: generic_hold_right {
+                ghr: generic_hold_right {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_RIGHT";
             #binding-cells = <2>;
@@ -44,7 +35,6 @@
                 <10>, <11>, <12>, <13>, <14>,
                 <20>, <21>, <22>, <23>, <24>;
         };
-
         ghl: generic_hold_left {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_LEFT";
@@ -61,20 +51,7 @@
                 ;
         };
 
-    };
 
-    macros {
-
-        alf: alf {
-            label = "alf";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp SPACE>
-                , <&macro_release &kp LGUI>
-                ;
-        };
 
         lst: layer_sticky_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -132,7 +109,7 @@
    &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &kp LS(LC(LA(LG(SEMI))))
    &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ght LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp RET
    &trans   &trans              &trans          &trans          &trans        &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
-                                &trans          &trans          &trans        &alf                    &trans                       &trans
+                                &trans          &trans          &trans        &kp LG(SPACE)           &trans                       &trans
                         >;
                 };
 
