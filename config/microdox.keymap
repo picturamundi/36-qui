@@ -20,34 +20,7 @@
 
 / {
     macros {
-        ht: hold-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GENERIC_HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <110>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        lt: layer-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GENERIC_HOLD_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <110>;
-            quick_tap_ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&kp>;
-        };
-        lst: layer-sticky-tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_STICKY_TAP";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick_tap_ms = <50>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&sk>;
-        };
-        mtr: mod-tap-right {
+        mtr: generic_hold_riht {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_RIht";
             #binding-cells = <2>;
@@ -61,7 +34,7 @@
                 <10>, <11>, <12>, <13>, <14>,
                 <20>, <21>, <22>, <23>, <24>;
         };
-        mtl: mod-tap-left {
+        mtl: generic_hold_left {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_LEFT";
             #binding-cells = <2>;
@@ -76,6 +49,25 @@
                 <25>, <26>, <27>, <28>, <29>
                 ;
         };
+        lst: layer_sticky_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_STICKY_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <50>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&sk>;
+        };
+        ht: generic_hold-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GENERIC_HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <110>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        
     };
 
         keymap {
@@ -96,7 +88,7 @@
    &ht LG(N1) SQT  &ht LG(N2) COMMA   &ht LG(N3) DOT &ht LG(N4) P   &ht LG(N5) Y   &ht LG(N6) F          &ht LG(N7) G  &ht LG(N8) C   &ht LG(N9) R   &ht LG(N0) L
    &mtl LSHFT A     &mtl LCTRL O        &mtl LALT E     &mtl LGUI U     &ht RA(UP) I   &ht LG(TAB) D         &mtr RGUI H    &mtr RALT T     &mtr RCTRL N    &mtr RSHFT S
    &ht EXCL SEMI   &ht QMARK Q        &ht LPAR J     &ht RPAR K     &ht ESC X      &ht LC(LA(LG(V))) B   &ht AT M      &ht HASH W     &ht MINUS V    &ht FSLH Z
-   &mo 2           &lt 2 BSPC         &lst 1 LSHFT                                                           &ht 2 SPACE    &kp TAB         &mo 2
+   &mo 2            &ht 2 BSPC         &lst 1 LSHFT                                                           &ht 2 SPACE    &kp TAB         &mo 2
                         >;
                 };
 
