@@ -114,7 +114,7 @@
 
                         bindings = <
    &ght LG(N1) SQT  &ght LG(N2) COMMA   &ght LG(N3) DOT &ght LG(N4) P   &kp Y       &kp F           &kp G          &kp C           &kp R           &kp L
-   &ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &kp I       &kp D           &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
+   &ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &ght RA(UP)     &ght LG(TAB) D         &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
    &ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X      &ght LC(LA(LG(V))) B   &ght MINUS M   &kp W           &kp V           &kp Z
    &mo 2            &kp BSPC            &lst 1 LSHFT                                                           &ght 2 SPACE    &kp TAB         &mo 2
                         >;
