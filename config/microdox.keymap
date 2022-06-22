@@ -20,8 +20,7 @@
 
 / {
     macros {
-
-                ghr: generic_hold_right {
+        ghr: generic_hold_right {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_RIGHT";
             #binding-cells = <2>;
@@ -50,9 +49,6 @@
                 <25>, <26>, <27>, <28>, <29>
                 ;
         };
-
-
-
         lst: layer_sticky_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_STICKY_TAP";
@@ -62,7 +58,6 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
-
         ght: generic_hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_TAP";
@@ -72,7 +67,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
     };
 
         keymap {
