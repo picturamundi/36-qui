@@ -109,23 +109,25 @@
 // 0-----------------------------------------------------------------------
 // | LG1 | LG2 | LG3 | LG4 | LG5 |          | LG6 | LG6 | LG7 | LG8 | LG9 |
 // | SFT | CTL | ALT | GUI | MSN |          |SWTCH| GUI | ALT | CTL | SFT |
-// |  !  |  ?  |  (  |  )  | ESC |          | CLP |  -  |     |     |     |
+// |  !  |  ?  |  (  |  )  | ESC |          | CLP |  @  |  #  |  $  |  -  |
 //             | GUI | NAV | SFT |          | SPC | SYM | ALT |
 
                         bindings = <
    &ght LG(N1) SQT  &ght LG(N2) COMMA   &ght LG(N3) DOT &ght LG(N4) P   &ght LG(N5) Y   &ght LG(N6) F          &ght LG(N7) G  &ght LG(N8) C   &ght LG(N9) R   &ght LG(N0) L
    &ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &ght RA(UP) I   &ght LG(TAB) D         &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
-   &ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X      &ght LC(LA(LG(V))) B   &ght MINUS M   &kp W           &kp V           &kp Z
+   &ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X      &ght LC(LA(LG(V))) B   &ght AT M      &ght HASH W     &ght MINUS V    &ght FSLH Z
    &mo 2            &kp BSPC            &lst 1 LSHFT                                                           &ght 2 SPACE    &kp TAB         &mo 2
                         >;
                 };
 
                 nav_layer {
-// 1-----------------------------------------------------------------------------------------
-// |BTCLR|     | ESC |  ~   |     |          | TAB | HOME |  UP  | END | DEL  |
-// | BT1 | GUI | ALT | CTRL | NUM |          |  /  | LEFT | DOWN | RGT | BKSP |
-// | BT2 |     |     |      |     |          |  \  | ENT  |      |     |      |
-//             |     |      |     |          |     |      |      |
+
+// 1-------------------------------------------------------------------------
+// |BTCLR|     | ESC |  ~  |     |          | TAB | HOME | UP  | END | DEL  |
+// | BT1 | GUI | ALT | CTL | NUM |          |  /  | LEFT | DWN | RGT | BKSP |
+// | BT2 |     |     |     |     |          |  \  | ENT  |     |     |      |
+//             |     |     |     |          |     |      |     |
+
                         bindings = <
    &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &kp LS(LC(LA(LG(SEMI))))
    &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ght LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp RET
@@ -135,11 +137,13 @@
                 };
 
                 sym_layer {
+
 // 2-----------------------------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |          |  ^  |  &  |  *  |  (  |  )  |
 // |     |     |     |     |     |          |  -  |  =  |  {  |  }  | "|" |
 // |     |     |     |     |     |          |  _  |  +  |  [  |  ]  |  \  |
 //             | GUI |     | SPC |          | ENT |     | ALT |
+
                         bindings = <
    &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
    &bt BT_CLR    &trans    &trans    &trans    &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &bt BT_CLR
@@ -151,6 +155,7 @@
 // This layer is unreachable until "tri layer state" is sorted out.
 // Leaving it here for completeness.
                 num_layer {
+
 // 3-----------------------------------------------------------------------------------------
 // |     |     |     |     |     |          |  A  |  7  |  8  |  9  |  D  |
 // |     |     |     |     |     |          |  B  |  4  |  5  |  6  |  E  |
