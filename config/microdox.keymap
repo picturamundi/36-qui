@@ -80,8 +80,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_STICKY_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick_tap_ms = <0>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <50>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
@@ -90,7 +90,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <120>;
+            tapping-term-ms = <110>;
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -110,8 +110,8 @@
                         bindings = <
    &kp SQT      &kp COMMA       &kp DOT         &kp P           &kp Y        &kp F   &kp G           &kp C           &kp R           &kp L
    &ghl LSHFT A &ghl LCTRL O    &ghl LALT E     &ghl LGUI U     &kp I        &kp D   &ghr RGUI H     &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
-   &ght EXCL SEMI     &ght QMARK Q     &ght MINUS J           &kp K           &ght ESC X   &kp B   &kp M           &kp W           &kp V           &kp Z
-   &mo 2   &kp BSPC        &lst 1 LSHFT                                                         &kp SPACE       &kp TAB         &mo 2
+   &ght EXCL SEMI     &ght QMARK Q     &ght MINUS J           &kp K         &ght ESC X   &kp B   &kp M           &kp W           &kp V           &kp Z
+   &mo 2   &kp BSPC        &lst 1 LSHFT                                                  &ght 2 SPACE       &kp TAB         &mo 2
 
                         >;
                 };
