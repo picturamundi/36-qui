@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
+ * Copyriht (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -21,9 +21,9 @@
 / {
     macros {
 
-                ghr: generic_hold_right {
+        rmt: generic_hold_riht {
             compatible = "zmk,behavior-hold-tap";
-            label = "GENERIC_HOLD_RIGHT";
+            label = "GENERIC_HOLD_RIht";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <120>;
@@ -35,7 +35,7 @@
                 <10>, <11>, <12>, <13>, <14>,
                 <20>, <21>, <22>, <23>, <24>;
         };
-        ghl: generic_hold_left {
+        lmt: generic_hold_left {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_LEFT";
             #binding-cells = <2>;
@@ -63,7 +63,7 @@
             bindings = <&mo>, <&sk>;
         };
 
-        ght: generic_hold-tap {
+        ht: generic_hold-tap {
             compatible = "zmk,behavior-hold-tap";
             label = "GENERIC_HOLD_TAP";
             #binding-cells = <2>;
@@ -90,10 +90,10 @@
 //             | ZMK | MO3 | MO1 |          | MO2 | MO4 | ZMK |
 
                         bindings = <
-   &ght LG(N1) SQT  &ght LG(N2) COMMA   &ght LG(N3) DOT &ght LG(N4) P   &ght LG(N5) Y   &ght LG(N6) F          &ght LG(N7) G  &ght LG(N8) C   &ght LG(N9) R   &ght LG(N0) L
-   &ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &ght RA(UP) I   &ght LG(TAB) D         &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
-   &ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X      &ght LC(LA(LG(V))) B   &ght AT M      &ght HASH W     &ght MINUS V    &ght FSLH Z
-   &mo 2            &ght 2 BSPC         &lst 1 LSHFT                                                           &ght 2 SPACE    &kp TAB         &mo 2
+   &ht LG(N1) SQT  &ht LG(N2) COMMA   &ht LG(N3) DOT &ht LG(N4) P   &ht LG(N5) Y   &ht LG(N6) F          &ht LG(N7) G  &ht LG(N8) C   &ht LG(N9) R   &ht LG(N0) L
+   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RA(UP) I   &ht LG(TAB) D         &rmt RGUI H    &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
+   &ht EXCL SEMI   &ht QMARK Q        &ht LPAR J     &ht RPAR K     &ht ESC X      &ht LC(LA(LG(V))) B   &ht AT M      &ht HASH W     &ht MINUS V    &ht FSLH Z
+   &mo 2            &ht 2 BSPC         &lst 1 LSHFT                                                           &ht 2 SPACE    &kp TAB         &mo 2
                         >;
                 };
 
@@ -107,7 +107,7 @@
 
                         bindings = <
    &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &trans        &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &kp LS(LC(LA(LG(SEMI))))
-   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ght LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp RET
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &mo 3         &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &kp RET
    &trans   &trans              &trans          &trans          &trans        &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
                                 &trans          &trans          &trans        &kp LG(SPACE)           &trans                       &trans
                         >;
