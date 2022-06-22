@@ -101,16 +101,16 @@
         keymap {
                 compatible = "zmk,keymap";
                 default_layer {
-// 0-------------------------------------------------------------------------
-// |  '  |  ,  |  .  |  p  |  y   |          |  f  |  g   |  c  |  r  |  l  |
-// |  a  |  o  |  e  |  u  |  i   |          |  d  |  h   |  t  |  n  |  s  |
-// |  ;  |  q  |  j  |  k  |  x   |          |  b  |  m   |  w  |  v  |  z  |
-//             | ZMK | BSP | SHFT |          | SPC | TAB  | ZMK |
-// 0-------------------------------------------------------------------------
-// |  '  |  ,  |  .  |  p  |  y   |          |  f  |  g   |  c  |  r  |  l  |
-// |  a  |  o  |  e  |  u  |  i   |          |  d  |  h   |  t  |  n  |  s  |
-// |  !  |  ?  |  (  |  )  | ESC  |          |SWTCH|  -   |     |     |     |
-//             | GUI | NAV | SHFT |          | SPC | SYM  | ALT |
+// 0-----------------------------------------------------------------------
+// |  '  |  ,  |  .  |  p  |  y  |          |  f  |  g  |  c  |  r  |  l  |
+// |  a  |  o  |  e  |  u  |  i  |          |  d  |  h  |  t  |  n  |  s  |
+// |  ;  |  q  |  j  |  k  |  x  |          |  b  |  m  |  w  |  v  |  z  |
+//             | ZMK | BSP | SFT |          | SPC | TAB | ZMK |
+// 0-----------------------------------------------------------------------
+// | LG1 | LG2 | LG3 | LG4 | LG5 |          | LG6 | LG6 | LG7 | LG8 | LG9 |
+// | SFT | CTL | ALT | GUI | MSN |          |SWTCH| GUI | ALT | CTL | SFT |
+// |  !  |  ?  |  (  |  )  | ESC |          | CLP |  -  |     |     |     |
+//             | GUI | NAV | SFT |          | SPC | SYM | ALT |
 
                         bindings = <
    &ght LG(N1) SQT  &ght LG(N2) COMMA   &ght LG(N3) DOT &ght LG(N4) P   &ght LG(N5) Y   &ght LG(N6) F          &ght LG(N7) G  &ght LG(N8) C   &ght LG(N9) R   &ght LG(N0) L
