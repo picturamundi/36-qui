@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
@@ -57,8 +57,10 @@
             hold-trigger-key-positions = 
                 <5>, <6>, <7>, <8>, <9>,
                 <15>, <16>, <17>, <18>, <19>,
-                <25>, <26>, <27>, <28>, <29>;
+                <25>, <26>, <27>, <28>, <29>
+                ;
         };
+
     };
 
     macros {
@@ -111,10 +113,10 @@
 //             | GUI | NAV | SHFT |          | SPC | SYM | ALT |
 
                         bindings = <
-&ght LG(N1) SQT  &ght LG(N2) COMMA   &ght LG(N3) DOT &ght LG(N4) P   &ght LG(N5) Y   &ght LG(N6) F          &ght LG(N7) G  &ght LG(N8) C   &ght LG(N9) R   &ght LG(N0) L
-&ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &ght RA(UP)     &ght LG(TAB) D         &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
-&ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X      &ght LC(LA(LG(V))) B   &ght MINUS M   &kp W           &kp V           &kp Z
-&mo 2            &kp BSPC            &lst 1 LSHFT                                                                          &ght 2 SPACE    &kp TAB         &mo 2
+   &ght LG(N1) SQT  &ght LG(N2) COMMA   &ght LG(N3) DOT &ght LG(N4) P   &ght LG(N5) Y   &ght LG(N6) F          &ght LG(N7) G  &ght LG(N8) C   &ght LG(N9) R   &ght LG(N0) L
+   &ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &ght RA(UP)     &ght LG(TAB) D         &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
+   &ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X      &ght LC(LA(LG(V))) B   &ght MINUS M   &kp W           &kp V           &kp Z
+   &mo 2            &kp BSPC            &lst 1 LSHFT                                                                          &ght 2 SPACE    &kp TAB         &mo 2
                         >;
                 };
 
