@@ -108,10 +108,10 @@
 //             | GUI | NAV | SHFT |          | SPC | SYM  | ALT |
 
                         bindings = <
-   &kp SQT          &kp COMMA       &kp DOT         &kp P       &kp Y       &kp F           &kp G          &kp C           &kp R           &kp L
-   &ghl LSHFT A     &ghl LCTRL O    &ghl LALT E     &ghl LGUI U &kp I       &kp D           &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
-   &ght EXCL SEMI   &ght QMARK Q    &ght LPAR J     &ght RPAR K &ght ESC X  &ght LG(TAB) B  &ght MINUS M   &kp W           &kp V           &kp Z
-   &mo 2            &kp BSPC        &lst 1 LSHFT                                                           &ght 2 SPACE    &kp TAB         &mo 2
+   &ght LG(1) SQT   &ght LG(2) COMMA    &ght LG(3) DOT  &ght LG(4) P    &kp Y       &kp F           &kp G          &kp C           &kp R           &kp L
+   &ghl LSHFT A     &ghl LCTRL O        &ghl LALT E     &ghl LGUI U     &kp I       &kp D           &ghr RGUI H    &ghr RALT T     &ghr RCTRL N    &ghr RSHFT S
+   &ght EXCL SEMI   &ght QMARK Q        &ght LPAR J     &ght RPAR K     &ght ESC X  &ght LG(TAB) B  &ght MINUS M   &kp W           &kp V           &kp Z
+   &mo 2            &kp BSPC            &lst 1 LSHFT                                                           &ght 2 SPACE    &kp TAB         &mo 2
                         >;
                 };
 
