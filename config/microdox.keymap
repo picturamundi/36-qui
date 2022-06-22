@@ -73,6 +73,16 @@
             bindings = <&kp>, <&kp>;
         };
 
+        lt: layer-tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER-TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <110>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
     };
 
         keymap {
@@ -93,7 +103,7 @@
    &ht LG(N1) SQT  &ht LG(N2) COMMA   &ht LG(N3) DOT &ht LG(N4) P   &ht LG(N5) Y   &ht LG(N6) F          &ht LG(N7) G  &ht LG(N8) C   &ht LG(N9) R   &ht LG(N0) L
    &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RA(UP) I   &ht LG(TAB) D         &rmt RGUI H    &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
    &ht EXCL SEMI   &ht QMARK Q        &ht LPAR J     &ht RPAR K     &ht ESC X      &ht LC(LA(LG(V))) B   &ht AT M      &ht HASH W     &ht MINUS V    &ht FSLH Z
-   &mo 2            &ht 2 BSPC         &lst 1 LSHFT                                                           &ht 2 SPACE    &kp TAB         &mo 2
+   &mo 2            &lt 2 BSPC         &lst 1 LSHFT                                                           &ht 2 SPACE    &kp TAB         &mo 2
                         >;
                 };
 
