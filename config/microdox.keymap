@@ -99,9 +99,9 @@
 //             |     |     |     |          |     |      |     |
 
                         bindings = <
-   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &kp COMMA       &kp N7            &kp N8      &kp N9    &trans    &trans
-   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &kp DOT         &kp N4            &kp N5      &kp N6    &trans    &trans
-   &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)    &kp LS(N8)      &kp N1            &kp N2      &kp N3    &trans    &trans
+   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7            &kp N8      &kp N9    &trans
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT           &trans      &kp DOT         &kp N4            &kp N5      &kp N6    &trans
+   &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1            &kp N2      &kp N3    &trans
    &trans   &trans              &trans                                          &kp LG(SPACE)     &kp N0      &trans
                         >;
                         
