@@ -67,6 +67,13 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp A>, <&kp N3>;
+        };
     };
 
         keymap {
@@ -144,7 +151,7 @@
 // |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |          |  0  |  .  |     |
                         bindings = <
-    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR  &trans &trans   &kp A  &kp N7  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_CLR
+    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR  &trans &trans   &kp A  &kp N7  &bt BT_CLR      &bt BT_SEL 1    &bt BT_SEL 0
     &reset          &trans          &trans      &trans &trans   &kp B  &kp N4  &kp N5          &trans           &reset
     &bootloader     &trans          &trans      &trans &trans   &kp C  &kp N1  &kp N2          &kp N3          &bootloader
     &trans          &trans          &trans      &kp N0 &kp DOT  &trans
