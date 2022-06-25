@@ -87,7 +87,7 @@
    &ht LG(N1) SQT   &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y    &ht LG(N6) F        &ht LG(N7) G    &ht LG(N8) C    &ht LG(N9) R    &ht LG(N0) L
    &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RA(UP) I    &ht LG(TAB) D       &rmt RGUI H     &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
    &ht EXCL SEMI    &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X       &ht LC(LA(LG(V))) B &ht AT M        &ht HASH W      &ht MINUS V     &ht FSLH Z
-   &mo 3            &lt 3 BSPC          &lst 1 LSHFT                                                                        &lt 2 SPACE     &ht 4 TAB       &mo 3
+   &mo 4            &lt 3 BSPC          &lst 1 LSHFT                                                                        &lt 2 SPACE     &ht 4 TAB       &mo 4
                         >;
                 };
 
@@ -100,7 +100,7 @@
 
                         bindings = <
    &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7            &kp N8      &kp N9    &trans
-   &trans   &kp LEFT            &kp DOWN        &kp RIGHT           &trans      &kp DOT         &kp N4            &kp N5      &kp N6    &trans
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT           &trans      &kp DOT         &kp N4            &kp N5      &kp N6    &kp RET
    &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1            &kp N2      &kp N3    &trans
    &trans   &trans              &trans                                          &kp LG(SPACE)     &kp N0      &trans
                         >;
@@ -115,23 +115,38 @@
 //             | GUI |     | SPC |          | ENT |     | ALT |
 
                         bindings = <
-   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &kp LS(LC(LA(LG(SEMI))))
-   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &kp RET  
+   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
+   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
    &trans       &trans     &trans                                               &kp RET &kp N0  &kp RALT 
                         >;
                 };
 
-                zmk {
+                mouse {
 // 3-----------------------------------------------------------------------------------------
 // |     |     |     |     |     |          |  A  |  7  |  8  |  9  |  D  |
 // |     |     |     |     |     |          |  B  |  4  |  5  |  6  |  E  |
 // |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |          |  0  |  .  |     |
                         bindings = <
+    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
+    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
+    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
+    &trans       &trans     &trans                                               &kp RET &kp N0  &kp RALT 
+    &trans          &trans          &trans      &kp N0 &kp DOT  &trans
+                        >;
+                };
+
+                zmk {
+// 4-----------------------------------------------------------------------------------------
+// |     |     |     |     |     |          |  A  |  7  |  8  |  9  |  D  |
+// |     |     |     |     |     |          |  B  |  4  |  5  |  6  |  E  |
+// |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
+//             |     |     |     |          |  0  |  .  |     |
+                        bindings = <
     &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR  &trans &trans   &kp A  &kp N7  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_CLR
-    &reset          &bootloader     &trans      &trans &trans   &kp B  &kp N4  &kp N5          &bootloader     &reset
-    &trans          &trans          &trans      &trans &trans   &kp C  &kp N1  &kp N2          &kp N3          &kp F
+    &reset          &trans          &trans      &trans &trans   &kp B  &kp N4  &kp N5          &trans           &reset
+    &bootloader     &trans          &trans      &trans &trans   &kp C  &kp N1  &kp N2          &kp N3          &bootloader
     &trans          &trans          &trans      &kp N0 &kp DOT  &trans
                         >;
                 };
