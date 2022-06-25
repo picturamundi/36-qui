@@ -99,10 +99,10 @@
 //             |     |     |     |          |     |      |     |
 
                         bindings = <
-   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7            &kp N8      &kp N9    &trans
-   &trans   &kp LEFT            &kp DOWN        &kp RIGHT           &trans      &kp DOT         &kp N4            &kp N5      &kp N6    &kp RET
-   &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1            &kp N2      &kp N3    &trans
-   &trans   &trans              &trans                                          &kp LG(SPACE)     &kp N0      &trans
+   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7  &kp N8      &kp N9    &trans
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT           &trans      &kp DOT         &kp N4  &kp N5      &kp N6    &kp RET
+   &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1  &kp N2      &kp N3    &trans 
+   &trans   &trans              &trans                                          &kp LG(SPACE)   &kp N0  &trans
                         >;
                         
                 };
@@ -115,10 +115,10 @@
 //             | GUI |     | SPC |          | ENT |     | ALT |
 
                         bindings = <
-   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
-   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
-   &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
-   &trans       &trans     &trans                                               &kp RET &kp N0  &kp RALT 
+   &trans       &trans     &trans      &trans  &trans   &trans       &kp C_BRI_UP   &kp C_VOL_UP    &trans  &trans
+   &trans       &trans     &trans      &trans  &trans   &trans       &kp C_BRI_DN   &kp C_VOL_DN    &trans  &trans
+   &trans       &trans     &trans      &trans  &trans   &trans       &trans         &kp C_MUTE      &trans  &trans
+   &trans       &trans     &trans                                               &trans      &trans  &trans
                         >;
                 };
 
