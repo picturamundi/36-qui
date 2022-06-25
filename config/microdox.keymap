@@ -145,7 +145,7 @@
 //             |     |     |     |          |  0  |  .  |     |
                         bindings = <
     &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR  &trans &trans   &kp A  &kp N7  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_CLR
-    &reset          &trans          &trans      &trans &trans   &kp B  &kp N4  &kp N5          &trans           &reset
+    &reset         &trans          &trans      &trans &trans   &kp B  &kp N4  &kp N5          &trans           &reset
     &bootloader     &trans          &trans      &trans &trans   &kp C  &kp N1  &kp N2          &kp N3          &bootloader
     &trans          &trans          &trans      &kp N0 &kp DOT  &trans
                         >;
