@@ -99,9 +99,9 @@
 //             |     |     |     |          |     |      |     |
 
                         bindings = <
-   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &kp COMMA       &kp N7            &kp N8      &kp N9
-   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &kp DOT         &kp N4            &kp N5      &kp N6
-   &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)    &kp LS(N8)      &kp N1            &kp N2      &kp N3
+   &trans   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)   &kp COMMA       &kp N7            &kp N8      &kp N9    &trans    &trans
+   &trans   &kp LEFT            &kp DOWN        &kp RIGHT       &kp DOT         &kp N4            &kp N5      &kp N6    &trans    &trans
+   &trans   &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)    &kp LS(N8)      &kp N1            &kp N2      &kp N3    &trans    &trans
    &trans   &trans              &trans                                          &kp LG(SPACE)     &kp N0      &trans
                         >;
                         
@@ -129,10 +129,10 @@
 // |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |          |  0  |  .  |     |
                         bindings = <
-    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR  &trans &trans    &kp A  &kp N7  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_CLR
-    &reset          &bootloader     &trans      &trans &trans    &kp B  &kp N4  &kp N5          &bootloader     &reset
-    &trans          &trans          &trans      &trans &trans    &kp C  &kp N1  &kp N2          &kp N3          &kp F
-    &trans          &trans          &trans      &kp N0 &kp DOT &trans
+    &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_CLR  &trans &trans   &kp A  &kp N7  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_CLR
+    &reset          &bootloader     &trans      &trans &trans   &kp B  &kp N4  &kp N5          &bootloader     &reset
+    &trans          &trans          &trans      &trans &trans   &kp C  &kp N1  &kp N2          &kp N3          &kp F
+    &trans          &trans          &trans      &kp N0 &kp DOT  &trans
                         >;
                 };
         };
