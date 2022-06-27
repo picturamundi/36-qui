@@ -136,9 +136,9 @@
 // |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |          |  0  |  .  |     |
                         bindings = < 
-    &kp LC(Q)    &kp LC(W)  &kp LC(E)   &kp LC(R)   &kp LC(T)   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
-    &kp LC(A)    &kp LC(S)  &kp LC(D)   &kp LC(F)   &kp LC(G)   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
-    &kp LC(Z)    &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp LC(B)   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
+    &kp LG(Q)    &kp LG(W)  &kp LG(E)   &kp LG(R)   &kp LG(T)   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
+    &kp LG(A)    &kp LG(S)  &kp LG(D)   &kp LG(F)   &kp LG(G)   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
+    &kp LG(Z)    &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LG(B)   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
     &trans       &trans     &trans                                               &kp RET &kp N0  &kp RALT 
                         >;
                 };
