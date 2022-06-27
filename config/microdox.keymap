@@ -92,7 +92,7 @@
 
                         bindings = <
    &ht LG(N1) SQT   &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y    &ht LG(N6) F        &ht LG(N7) G    &ht LG(N8) C    &ht LG(N9) R    &ht LG(N0) L
-   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RA(UP) I    &ht RGUI D          &rmt LG(TAB) H  &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
+   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht LG(TAB) I   &ht RA(UP) D        &rmt RGUI H     &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
    &ht EXCL SEMI    &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X       &ht LC(LA(LG(V))) B &ht AT M        &ht HASH W      &ht MINUS V     &ht FSLH Z
    &mo 4            &lt 3 BSPC          &lst 1 LSHFT                                                                        &lt 2 SPACE     &ht 4 TAB       &mo 4
                         >;
