@@ -86,13 +86,13 @@
 //             |     | BSP | SFT |          | SPC | TAB |     |
 // 0-----------------------------------------------------------------------
 // | LG1 | LG2 | LG3 | LG4 | LG5 |          | LG6 | LG6 | LG7 | LG8 | LG9 |
-// | SFT | CTL | ALT | GUI | MSN |          |SWTCH| GUI | ALT | CTL | SFT |
+// | SFT | CTL | ALT | GUI |SWTCH|          | MSN | GUI | ALT | CTL | SFT |
 // |  !  |  ?  |  (  |  )  | ESC |          | CLP |  @  |  #  |  $  |  -  |
 //             | ZMK | MO3 | MO1 |          | MO2 | MO4 | ZMK |
 
                         bindings = <
    &ht LG(N1) SQT   &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y    &ht LG(N6) F        &ht LG(N7) G    &ht LG(N8) C    &ht LG(N9) R    &ht LG(N0) L
-   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RA(UP) I    &ht LG(TAB) D       &rmt RGUI H     &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
+   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RA(UP) I    &ht RGUI D          &rmt LG(TAB) H  &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
    &ht EXCL SEMI    &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X       &ht LC(LA(LG(V))) B &ht AT M        &ht HASH W      &ht MINUS V     &ht FSLH Z
    &mo 4            &lt 3 BSPC          &lst 1 LSHFT                                                                        &lt 2 SPACE     &ht 4 TAB       &mo 4
                         >;
@@ -122,25 +122,24 @@
 //             | GUI |     | SPC |          | ENT |     | ALT |
 
                         bindings = <
-   &trans       &trans     &trans      &trans  &trans   &trans       &kp C_BRI_UP   &kp C_VOL_UP    &trans  &trans
-   &trans       &trans     &trans      &trans  &trans   &trans       &kp C_BRI_DN   &kp C_VOL_DN    &trans  &trans
-   &trans       &trans     &trans      &trans  &trans   &trans       &trans         &kp C_MUTE      &trans  &trans
+   &trans       &trans     &kp C_BRI_UP   &kp C_VOL_UP  &trans   &trans       &kp C_BRI_UP   &kp C_VOL_UP    &trans  &trans
+   &trans       &trans     &kp C_BRI_DN   &kp C_VOL_DN  &trans   &trans       &kp C_BRI_DN   &kp C_VOL_DN    &trans  &trans
+   &trans       &trans     &trans         &kp C_MUTE    &trans   &trans       &trans         &kp C_MUTE      &trans  &trans
    &trans       &trans     &trans                                               &trans      &trans  &trans
                         >;
                 };
 
-                mouse {
+                commands-mouse {
 // 3-----------------------------------------------------------------------------------------
 // |     |     |     |     |     |          |  A  |  7  |  8  |  9  |  D  |
 // |     |     |     |     |     |          |  B  |  4  |  5  |  6  |  E  |
 // |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |          |  0  |  .  |     |
-                        bindings = <
-    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
-    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
-    &trans       &trans     &trans      &trans  &trans   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
+                        bindings = < 
+    &kp LC(Q)    &kp LC(W)  &kp LC(E)   &kp LC(R)   &kp LC(T)   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
+    &kp LC(A)    &kp LC(S)  &kp LC(D)   &kp LC(F)   &kp LC(G)   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
+    &kp LC(Z)    &kp LC(X)  &kp LC(C)   &kp LC(V)   &kp LC(B)   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
     &trans       &trans     &trans                                               &kp RET &kp N0  &kp RALT 
-    &trans          &trans          &trans      &kp N0 &kp DOT  &trans
                         >;
                 };
 
