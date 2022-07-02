@@ -12,11 +12,12 @@
     release-after-ms = <1500>;
     quick-release;
     /delete-property/ ignore-modifiers;
-    quick-tap-ms = <250>;
+    global-quick-tap;    
 };
 
 &lt {
     quick-tap-ms = <250>;
+    global-quick-tap;
 };
 
 / {
