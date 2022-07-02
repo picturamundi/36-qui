@@ -24,8 +24,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD-TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <250>;
+            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -34,7 +35,7 @@
             label = "RIGHT-MOD-TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <120>;
+            tapping-term-ms = <150>;
             quick_tap_ms = <250>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
@@ -63,15 +64,9 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <250>;
+            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
-        };
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp A>, <&kp N3>;
         };
     };
 
