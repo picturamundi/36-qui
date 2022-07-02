@@ -18,7 +18,6 @@
 
 &lt {
     quick-tap-ms = <250>;
-    global-quick-tap;
 };
 
 / {
