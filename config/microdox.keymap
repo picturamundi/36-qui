@@ -63,7 +63,8 @@
             label = "LAYER-STICKY-TAP";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
-            quick_tap_ms = <250>;
+            quick_tap_ms = <100>;
+            global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&mo>, <&sk>;
         };
