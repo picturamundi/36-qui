@@ -85,10 +85,10 @@
 //             | ZMK | MO3 | MO1 |          | MO2 | MO4 | ZMK |
 
                         bindings = <
-   &ht LG(N1) SQT   &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y    &ht LG(N6) F        &ht LG(N7) G    &ht LG(N8) C    &ht LG(N9) R    &ht LG(N0) L
-   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht LG(TAB) I   &ht RA(UP) D        &rmt RGUI H     &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
-   &ht EXCL SEMI    &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X       &ht LC(LA(LG(V))) B &ht MINUS M     &ht HASH W      &ht FSLH V      &ht AT Z
-   &mo 5            &lt 3 BSPC          &lst 1 LSHFT                                                                        &lt 2 SPACE     &ht 4 TAB       &mo 5
+   &ht LG(N1) SQT   &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y    &ht LG(N6) F    &ht LG(N7) G    &ht LG(N8) C    &ht LG(N9) R    &ht LG(N0) L
+   &lmt LSHFT A     &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht LG(TAB) I   &ht RA(UP) D    &rmt RGUI H     &rmt RALT T     &rmt RCTRL N    &rmt RSHFT S
+   &ht EXCL SEMI    &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X       &ht LCAPS B     &ht MINUS M     &ht HASH W      &ht FSLH V      &ht AT Z
+   &mo 5            &lt 3 BSPC          &lst 1 LSHFT                                                                    &lt 2 SPACE     &ht 4 TAB       &mo 5
                         >;
                 };
 
@@ -100,10 +100,10 @@
 //             |     |     |     |          |     |      |     |
 
                         bindings = <
-   &trans       &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7          &kp N8          &kp N9          &trans
-   &lmt LSHFT O &lmt LCTRL LEFT     &lmt LALT DOWN  &lmt LGUI RIGHT     &trans      &kp DOT         &lmt RGUI N4    &lmt RALT N5    &lmt RCTRL N6   &lmt RSHFT RET
-   &trans       &kp LC(LBKT)        &trans          &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans 
-   &trans       &trans              &trans                                          &kp LG(SPACE)   &kp N0          &trans
+   &trans                   &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7          &kp N8          &kp N9          &trans
+   &lmt LSHFT LC(LA(LG(V))) &lmt LCTRL LEFT     &lmt LALT DOWN  &lmt LGUI RIGHT     &trans      &kp DOT         &lmt RGUI N4    &lmt RALT N5    &lmt RCTRL N6   &lmt RSHFT RET
+   &trans                   &kp LC(LBKT)        &trans          &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans 
+   &trans                   &trans              &trans                                          &kp LG(SPACE)   &kp N0          &trans
                         >;
                         
                 };
