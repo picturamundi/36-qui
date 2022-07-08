@@ -92,7 +92,7 @@
                         >;
                 };
 
-                nav_num {
+                nav-num {
 // 1-------------------------------------------------------------------------
 // |BTCLR|     | ESC |  ~  |     |          | TAB | HOME | UP  | END | DEL  |
 // | BT1 | GUI | ALT | CTL | NUM |          |  /  | LEFT | DWN | RGT | BKSP |
@@ -102,13 +102,13 @@
                         bindings = <
    &trans       &kp RA(LEFT)        &kp UP          &kp RA(RIGHT)       &trans      &kp COMMA       &kp N7          &kp N8          &kp N9          &trans
    &lmt LSHFT O &lmt LCTRL LEFT     &lmt LALT DOWN  &lmt LGUI RIGHT     &trans      &kp DOT         &lmt RGUI N4    &lmt RALT N5    &lmt RCTRL N6   &lmt RSHFT RET
-   &trans       &kp LC(LBKT)        &kp LC(R)       &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1          &kp N2          &kp N3          &kp RET 
+   &trans       &kp LC(LBKT)        &trans          &kp LC(RBKT)        &trans      &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans 
    &trans       &trans              &trans                                          &kp LG(SPACE)   &kp N0          &trans
                         >;
                         
                 };
 
-                media {
+                f-symbols {
 // 2-----------------------------------------------------------------------
 // |  !  |  @  |  #  |  $  |  %  |          |  ^  |  &  |  *  |  (  |  )  |
 // |     |     |     |     |     |          |  -  |  =  |  {  |  }  | "|" |
@@ -116,10 +116,10 @@
 //             | GUI |     | SPC |          | ENT |     | ALT |
 
                         bindings = <
-   &trans       &trans     &kp C_BRI_UP         &kp C_VOL_UP        &trans   &trans       &kp C_BRI_UP          &kp C_VOL_UP        &trans  &trans
-   &trans       &trans     &lmt LALT C_BRI_DN   &lmt LGUI C_VOL_DN  &trans   &trans       &lmt RGUI C_BRI_DN    &lmt RALT C_VOL_DN  &trans  &trans
-   &trans       &trans     &trans               &kp C_MUTE          &trans   &trans       &trans                &kp C_MUTE          &trans  &trans
-   &trans       &trans     &trans                                            &trans      &trans  &trans
+   &kp F12  &kp F7 &kp F8  &kp F9   &kp C_BRI_UP          &kp C_VOL_UP          &trans      &trans      &trans      &trans
+   &kp F11  &kp F4 &kp F5  &kp F6   &lmt RGUI C_BRI_DN    &lmt RALT C_VOL_DN    &kp LBKT    &lmt RBKT   &kp GRAVE   &trans
+   &kp F10  &kp F1 &kp F2  &kp F3   &trans                &kp C_MUTE            &kp MINUS   &kp EQUAL   &kp FSLH    &kp BSLH
+   &trans   &trans &trans                                                                   &trans      &trans      &trans
                         >;
                 };
 
@@ -130,10 +130,10 @@
 // |     |     |     |     |     |          |  C  |  1  |  2  |  3  |  F  |
 //             |     |     |     |          |  0  |  .  |     |
                         bindings = < 
-    &kp LG(Q)    &kp LG(W)  &kp LG(E)   &kp LG(R)   &kp LG(T)   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))        &kp  LS(LC(LA(LG(I))))                   &kp LS(LC(LA(LG(O))))   &trans
-    &kp LG(A)    &kp LG(S)  &kp LG(D)   &kp LG(F)   &kp LG(G)   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))        &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &trans  
-    &kp LG(Z)    &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LG(B)   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))        &kp  LC(LA(LG(COMMA)))                   &kp LC(LA(LG(DOT)))     &trans
-    &trans       &trans     &trans                                               &kp RET &kp N0  &kp RALT 
+    &kp LG(Q)    &kp LG(W)  &kp LG(E)   &kp LG(R)   &kp LG(T)   &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))   &kp  LS(LC(LA(LG(I))))                  &kp LS(LC(LA(LG(O))))   &trans
+    &kp LG(A)    &kp LG(S)  &kp LG(D)   &kp LG(F)   &kp LG(G)   &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))   &ht LS(LC(LA(LG(C)))) LS(LC(LA(LG(K)))) &kp LS(LC(LA(LG(L))))   &trans  
+    &kp LG(Z)    &kp LG(X)  &kp LG(C)   &kp LG(V)   &kp LG(B)   &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))   &kp  LC(LA(LG(COMMA)))                  &kp LC(LA(LG(DOT)))     &trans
+    &trans       &trans     &trans                                                                              &kp RET                                 &kp N0                  &kp RALT 
                         >;
                 };
 
