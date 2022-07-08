@@ -150,11 +150,11 @@
         commands-mouse {
                 // alphas, common symbols, common commands                            THREE
                 // ,-----.-----.-----.-----.-----.          ,-----.-----.-----.-----.-----.
-                // |  '  |  ,  |  .  |  P  |  Y  |          |  F  |  G  |  C  |  R  |  L  |
+                // | LGQ | LGW | LGE | LGR | LGO |          |  ∩  |  ◤  |  ▲  |  ◥  |     |
                 // |-----+-----+-----+-----+-----|   TAP    |-----+-----+-----+-----+-----|
-                // |  A  |  O  |  E  |  U  |  I  |          |  D  |  H  |  T  |  N  |  S  |
+                // | LGA | LGS | LGD | LGF | LGN |          |     |  ◀︎  |  ●  |  ▶︎  |  ○  |
                 // |-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
-                // |  ;  |  Q  |  J  |  K  |  X  |          |  B  |  M  |  W  |  V  |  Z  |
+                // | LGZ | LGX | LGC | LGV | LGM |          |  ∪  |  ◣  |  ▼  |  ◢  |     |
                 // `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
                 //       .-------.-------.-------.          .-------.-------.-------.      
                 //       |       |       |       |          |       |       |       |      
@@ -162,7 +162,7 @@
                 // ,-----.-----.-----.-----.-----.          ,-----.-----.-----.-----.-----.
                 // |     |     |     |     |     |          |     |     |     |     |     |
                 // |-----+-----+-----+-----+-----|   HOLD   |-----+-----+-----+-----+-----|
-                // | SFT | CTL | ALT | GUI | APS |          | MSN | GUI | ALT | CTL | SFT |
+                // | SFT | CTL | ALT | GUI | APS |          |     |     |     |     |     |
                 // |-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
                 // |     |     |     |     |     |          |     |     |     |     |     |
                 // `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
@@ -170,10 +170,10 @@
                 //       |       |       |       |          |       |       |       |      
                 //       '-------'-------'-------'          '-------'-------'-------'      
             bindings = < 
-                &kp LG(Q)   &kp LG(W)   &kp LG(E)   &kp LG(R)   &kp LG(O)   /**/    &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))   &kp  LS(LC(LA(LG(I))))  &kp LS(LC(LA(LG(O))))   &trans
-                &kp LG(A)   &kp LG(S)   &kp LG(D)   &kp LG(F)   &kp LG(N)   /**/    &kp LS(LC(LA(LG(H))))   &kp LS(LC(LA(LG(J))))   &kp  LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &kp LS(LC(LA(LG(C))))
-                &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp LG(M)   /**/    &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))   &kp  LC(LA(LG(COMMA)))  &kp LC(LA(LG(DOT)))     &trans
-                &trans      &trans      &trans                              /**/                                                    &trans                  &trans                  &trans 
+                &kp LG(Q)           &kp LG(W)           &kp LG(E)       &kp LG(R)       &kp LG(O)   /**/    &kp LS(LC(LA(LG(Y))))   &kp LS(LC(LA(LG(U))))   &kp  LS(LC(LA(LG(I))))  &kp LS(LC(LA(LG(O))))   &trans
+                &lmt LSHFT LG(A)    &lmt LCTRL LG(S)    &lmt LALT LG(D) &lmt LGUI LG(F) &kp LG(N)   /**/    &trans                  &kp LS(LC(LA(LG(J))))   &kp  LS(LC(LA(LG(K))))  &kp LS(LC(LA(LG(L))))   &kp LS(LC(LA(LG(C))))
+                &kp LG(Z)           &kp LG(X)           &kp LG(C)       &kp LG(V)       &kp LG(M)   /**/    &kp LS(LC(LA(LG(N))))   &kp LS(LC(LA(LG(M))))   &kp  LC(LA(LG(COMMA)))  &kp LC(LA(LG(DOT)))     &trans
+                &trans              &trans              &trans                              /**/                                                            &trans                  &trans                  &trans 
             >;
         };
 
