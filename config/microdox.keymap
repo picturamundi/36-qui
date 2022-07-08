@@ -140,10 +140,10 @@
                 //       |       |       |       |          |       |       |       |      
                 //       '-------'-------'-------'          '-------'-------'-------'      
             bindings = <
-                &kp F12         &kp F7  &kp F8  &kp F9  &kp C_BRI_UP    /**/    &kp C_VOL_UP    &trans      &trans      &trans      &trans
-                &lmt LSHFT F11  &kp F4  &kp F5  &kp F6  &kp C_BRI_DN    /**/    &kp C_VOL_DN    &kp LBKT    &kp RBKT    &kp GRAVE   &trans
-                &kp F10         &kp F1  &kp F2  &kp F3  &trans          /**/    &kp C_MUTE      &kp MINUS   &kp EQUAL   &kp FSLH    &kp BSLH
-                &trans  &trans  &trans                          /**/                                &trans      &trans      &trans
+                &kp F12         &kp F7          &kp F8          &kp F9          &kp C_BRI_UP    /**/    &kp C_VOL_UP    &trans          &trans          &trans              &trans
+                &lmt LSHFT F11  &lmt LCTRL F4   &lmt LALT F5    &lmt LGUI F6    &kp C_BRI_DN    /**/    &kp C_VOL_DN    &lmt RGUI LBKT  &lmt RALT RBKT  &lmt RCTRL GRAVE    &lmt RSHFT LS(LA(2))
+                &kp F10         &kp F1          &kp F2          &kp F3          &trans          /**/    &kp C_MUTE      &kp MINUS       &kp EQUAL       &kp BSLH            &kp FSLH
+                &trans  &trans  &trans                                                          /**/                                    &trans          &trans              &trans
             >;
         };
 
