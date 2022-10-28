@@ -58,7 +58,7 @@
     keymap {
         compatible = "zmk,keymap";
         
-        alpha { // alphas, mods, frequent symbols, frequent commands                   ZERO
+        alpha {
             bindings = <
                 // ╭───────────────┬──────────────────┬────────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬────────────────┬───────────────┬──────────────╮
                     &ht LG(N1) SQT  &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y        &ht LG(N6) F   &ht LG(N7) G   &ht LG(N8) C     &ht LG(N9) R    &ht LG(N0) L   
@@ -72,10 +72,10 @@
             >;
         };
         
-        nav-num { // navigation cluster, number pad                                       ONE
+        nav-num {
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
-                    &trans                      &kp RA(LEFT)    &kp UP          &kp RA(RIGHT)   &trans          &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
+                    &trans                      &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &lmt LSHFT LC(LA(LG(V)))    &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &trans          &kp DOT         &lmt RGUI N4    &lmt RALT N5    &lmt RCTRL N6   &lmt RSHFT RET
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
@@ -86,7 +86,7 @@
             >;
         };
         
-        nav-media { // navigation clutser, media                                         TWO
+        nav-media {
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────────┬────────────────────╮
                     &trans                      &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN        &kp C_BRI_UP         
@@ -100,7 +100,7 @@
             >;
         };
         
-        command-symbol { // one-handed commands, mouse                                         THREE
+        command-symbol {
             bindings = < 
                 // ╭───────────────────┬───────────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────────┬────────────────────╮
                     &kp LG(Q)           &kp LG(W)           &kp LG(E)       &kp LG(R)       &kp LG(O)       &kp LPAR       &kp AMPS        &kp STAR        &kp GRAVE            &kp RPAR             
@@ -114,7 +114,7 @@
             >;
         };
         
-        symbol-fuction { // one-handed commands, mouse                                         THREE
+        symbol-fuction {
             bindings = <
                 // ╭───────────────┬───────────────────┬───────────────┬───────────────────┬─────────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬─────────────────╮
                     &kp LT          &kp GT              &kp LA(SEMI)    &kp BSLH            &kp PIPE            &trans          &kp F7          &kp F8          &kp F9          &kp F12           
@@ -128,7 +128,7 @@
             >;
         };
         
-        controller { // controller                                                          FIVE
+        controller {
 
             bindings = <
                 // ╭───────────┬───────────────┬───────────────┬───────────────┬─────────────╮     ╭───────────┬───────────────┬───────────────┬───────────────┬──────────────╮
