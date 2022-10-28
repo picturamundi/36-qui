@@ -51,7 +51,7 @@
 
 ### Layer 1
 
-- alpha LEFT:  navigation cluster
+- alpha LEFT:  navigation cluster (one-handed)
 - alpha RIGHT: number pad
 
 ```
@@ -60,7 +60,7 @@
 |-----+-----+-----+-----+-----|   TAP    |-----+-----+-----+-----+-----|
 | CLP |  <  |  v  |  >  |     |          |  .  |  4  |  5  |  6  | RET |
 |-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
-|     | LG[ |     | LG] |     |          |  *  |  1  |  2  |  3  | RET |
+|     | LG[ |     | LG] |     |          |  *  |  1  |  2  |  3  |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
       |       |       |  XXX  |          |  CML  |   0   |       |      
@@ -80,7 +80,7 @@
 
 ### Layer 2
 
-- alpha LEFT:  f-keys
+- alpha LEFT:  navigation cluster
 - alpha RIGHT: media
 
 ```
@@ -109,8 +109,8 @@
 
 ### Layer 3
 
-- alpha LEFT:  one-handed QWERTY-commands
-- alpha RIGHT: symbols
+- alpha LEFT:  QWERTY-commands (one-handed)
+- alpha RIGHT: symbols 1
 
 ```
 ,-----.-----.-----.-----.-----.          ,-----.-----.-----.-----.-----.
@@ -138,9 +138,8 @@
 
 ### Layer 4
 
-- alpha LEFT: 
-                                                                    FOUR
-
+- alpha LEFT: symbols 2
+- alpha RIGHT: function keys
 
 ```
 ,-----.-----.-----.-----.-----.          ,-----.-----.-----.-----.-----.

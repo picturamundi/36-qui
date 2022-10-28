@@ -79,26 +79,26 @@
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &lmt LSHFT LC(LA(LG(V)))    &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &trans          &kp DOT         &lmt RGUI N4    &lmt RALT N5    &lmt RCTRL N6   &lmt RSHFT RET
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &trans                      &kp LC(LBKT)    &trans          &kp LC(RBKT)    &trans          &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans         
+                    &trans                      &kp LC(LBKT)    &trans          &kp LC(RBKT)    &trans          &kp LS(N8)      &kp N1          &kp N2          &kp N3          &kp            
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
                                                                 &trans          &trans          &trans          &kp LG(SPACE)   &kp N0          &trans
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────┴───────────────╯
             >;
         };
         
-/*        nav-media { // f-keys, media,                                                       TWO
+        nav-media { // navigation clutser, media                                         TWO
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────────┬────────────────────╮
-                    &trans                      &kp RA(LEFT)    &kp UP          &kp RA(RIGHT)   &trans          &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN        &kp C_BRI_UP         
+                    &trans                      &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP    &kp C_BRI_DN        &kp C_BRI_UP         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
-                    &lmt LSHFT LC(LA(LG(V)))    &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &trans          &kp C_RW        &lmt RGUI K_PP  &lmt RALT C_FF  &lmt RCTRL C_PREV   &lmt RSHFT C_NEXT    
+                    &lmt LSHFT LC(LA(LG(V)))    &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &trans          &kp C_RW        &lmt RGUI C_PP  &lmt RALT C_FF  &lmt RCTRL C_PREV   &lmt RSHFT C_NEXT    
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
-                    &trans                      &kp LC(LBKT)    &trans          &kp LC(RBKT)    &trans          &trans          &trans          &trans          &trans              &trans               
+                    &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &trans          &trans          &trans          &trans          &trans              &trans               
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────╯
                                                                 &trans          &trans          &trans          &trans          &trans          &trans                                                   
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────┴───────────────╯                                         
             >;
-        };*/
+        };
         
         command-symbol { // one-handed commands, mouse                                         THREE
             bindings = < 
@@ -114,7 +114,7 @@
             >;
         };
         
-        symbol-fuction {
+        symbol-fuction { // one-handed commands, mouse                                         THREE
             bindings = <
                 // ╭───────────────┬───────────────────┬───────────────┬───────────────────┬─────────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬─────────────────╮
                     &kp LT          &kp GT              &kp LA(SEMI)    &kp BSLH            &kp PIPE            &trans          &kp F7          &kp F8          &kp F9          &kp F12           
