@@ -9,10 +9,12 @@ For an explanation of the layout's design, see the [ergonomics section](#ergonom
 
 ## At a glance…
 
-**For users who want to skip the explanation of this layout's design, here are a few minimal should-knows:**
+**For users who want to skip the explanation of this layout's design, here are the condensed should-knows:**
 
 - Made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
 - For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below for what these shortcuts are supposed to actually do.
+![microdos](/images/microdox.svg)
+_Microdox form-factor_
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
   - Tap-Shift for less finger strain when typing, with the option of a tradition hold-shift in the form of a home-row mod
@@ -41,15 +43,29 @@ When it comes to this specific layout, there are two main ergonomic features tha
 
 ### 1. Home accessible keys
 
-**Home-accessible keys — can't think of a better name — are inputs that are quickly accessible by long-pressing a home-layer key if the user does not want to activate the layer that key is available on as a tap-function.**
+**Home-accessible keys are what I call inputs that are quickly accessible by long-pressing a home-layer key if the user does not want to activate the layer that key is available on as a tap-function.**
 
 As with many ergonomic layouts, the home layer — in fact, every layer — has home-row modifiers which are activated when a home-row key is long-pressed.
 
-However, the top-row and bottom row of the alpha block also provide long-hold inputs. These are inputs which you _could_ access normally by finding them in their assigned layers, but they are also available via hold on the home-row for extra convenience. It often feels more effortless to make a quick 120ms+ hold with one finger than to have to make the key combo requires to access another layer.
+However, the top-row and bottom row of the alpha block also provide long-hold inputs. These are inputs which you _could_ access normally by finding them in their assigned layers, but they are also available via hold on the home layer for extra convenience. It often feels more effortless to make a quick 120ms+ hold with one finger than to have to make the key combo requires to access another layer, provided the key doesn't need to repeat.
 
-The top row accessible keys are for tab-command in applications like web browsers. I also use them to control tabs in my IDE, my file explorer, my writing app… this is why they are home accessible! The first key opens the first tab, the second key opens the second tab, etc.
+**Top row accessible keys**: tab-command in applications like web browsers. I also use them to control tabs in my IDE, my file explorer, my writing app, and more. The first key opens the first tab, the second key opens the second tab, etc.
 
-The bottom row accessible keys are for symbols I want to be able to access in the middle of typing without activating another layer.
+**Bottom row accessible keys**: symbols I want to be able to access in the middle of typing without activating another layer.
+
+Below is a map of hold-functions on the alpha block of the home layer. See the [legend](#legend) for more visuals.
+
+```
+          ,-----.-----.-----.-----.-----.   ,-----.-----.-----.-----.-----.
+Tabs      | LG1 | LG2 | LG3 | LG4 | LG5 |   | LG6 | LG7 | LG8 | LG9 | LG0 |
+          |-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----|
+Mods      | SFT | CTL | ALT | GUI | APS |   | MSN | GUI | ALT | CTL | SFT |
+          |-----+-----+-----+-----+-----+   |-----+-----+-----+-----+-----|
+Symbols   |  !  |  ?  |  (  |  )  | ESC |   | CPL |  -  |  <  |  {  |  /  |
+          `-----'-----'-----'-----'-----'   `-----'-----'-----'-----'-----'
+```
+
+It is rare to be able to access something like an angled bracket or Cmd-5 from the home layer of such a small keyboard, but this is a game changer for me.
 
 
 ### 2. Hand-matching
