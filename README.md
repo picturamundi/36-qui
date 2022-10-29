@@ -1,6 +1,6 @@
 # Pictura Keyboard Layout Manual
 
-Pictura is an ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware. You can read about how and why I created it as part of a longstanding interest in various writing tools and systems at [picturamundi.com](https://www.picturamundi.com).
+Pictura is an ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware. <!--You can read about how and why I created it as part of a longstanding interest in various writing tools and systems at [picturamundi.com](https://www.picturamundi.com).-->
 
 For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
