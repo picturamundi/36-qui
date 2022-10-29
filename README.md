@@ -4,10 +4,12 @@ Pictura is an ergonomic keyboard layout compatible with devices running the ZMK 
 
 For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
+For an explanation of the layout's design, see the [ergonomics section](#ergonomic-considerations). For a visual map of the layout, see the [legend](#legend).
+
 
 ## At a glance…
 
-**For users who want to skip the explanation of this layout's design and jump right in, here are are a few quick should-knows:**
+**For users who want to skip the explanation of this layout's design, here are a few minimal should-knows:**
 
 - Made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
 - For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below for what these shortcuts are supposed to actually do.
@@ -81,7 +83,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 
 ## Legend
 
-### All
+### All layers
 
 - home-row: mods
 - thumb-cluster: layers
