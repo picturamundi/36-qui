@@ -1,14 +1,14 @@
-Contents:
-- [Quick intro](#at-a-glance)
+Contents
+
 - [Install and edit](#install-and-edit)
 - [Ergonomic design of this layout](#ergonomic-considerations)
 - [View of layers](#legend)
 
 ## At a glance…
 
-**For users who want to skip the explanation of this keyboard's design and jump right in, here are are a few condensed should-knows:**
+**For users who want to skip the explanation of this layout's design and jump right in, here are are a few condensed should-knows:**
 
-- Made with a Microdox in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
+- Made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
 - For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the layout legend below for what these shortcuts are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
@@ -19,7 +19,11 @@ How does this layout compare to the popular 36-key [Miryoku layout](https://gith
 
 ## Install and Edit
 
-Coming soon…
+- Download the most recent [Actions workflow](https://github.com/picturamundi/zmk-config/actions) artifact for .uf2 files that are ready to flash to your controller.
+- To edit the layout, download the [zmk-config](https://github.com/picturamundi/zmk-config) folder. In order to flash your edited files to a controller, you'll need to [set up ZMK on your machine](https://zmk.dev/docs/user-setup).
+
+See [ZMK docs](https://zmk.dev/docs) for any additional information.
+
 
 ## Ergonomic considerations
 
@@ -47,7 +51,7 @@ As with many ergonomic layouts, the home layer — in fact, every layer — has 
 
 However, the top-row and bottom row of the alpha block also provide long-hold inputs. These are inputs which you _could_ access normally by finding them in their assigned layers, but they are also available via hold on the home-row for extra convenience. It often feels more effortless to make a quick 120ms+ hold with one finger than to have to make the key combo requires to access another layer.
 
-The top row accessible keys are for tab-command in applications like web browsers. I also use them to control tabs in my IDE, my file explorer, my writing app… and this is why they are home accessible! The first key opens the first tab, the second key opens the second tab, etc.
+The top row accessible keys are for tab-command in applications like web browsers. I also use them to control tabs in my IDE, my file explorer, my writing app… this is why they are home accessible! The first key opens the first tab, the second key opens the second tab, etc.
 
 The bottom row accessible keys are for symbols I want to be able to access in the middle of typing without activating another layer.
 
