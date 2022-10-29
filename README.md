@@ -2,7 +2,7 @@
 
 Pictura is an ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
-For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation]((https://zmk.dev/docs)).
+For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
 
 ## At a glance…
@@ -10,13 +10,13 @@ For all information on how ZMK works, how to use this layout, how to edit it, an
 **For users who want to skip the explanation of this layout's design and jump right in, here are are a few quick should-knows:**
 
 - Made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
-- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the layout legend below for what these shortcuts are supposed to actually do.
+- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below for what these shortcuts are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
-  - Tap-Shift for less finger strain when typing, although there's also the option of a tradition hold-shift in the form of a home-row mod
+  - Tap-Shift for less finger strain when typing, with the option of a tradition hold-shift in the form of a home-row mod
   - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](#1-home-accessible-keys)
   - One-handed layers for mouse-friendly use
-  - DVORAK alphas but optional [QWERTY command shortcuts](#qwerty-commands-and-hand-matching)
+  - DVORAK alphas with optional [QWERTY command shortcuts](#qwerty-commands-and-hand-matching)
 
 
 ## Ergonomic considerations
