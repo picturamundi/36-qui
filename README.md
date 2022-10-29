@@ -1,12 +1,13 @@
-Contents
+# Pictura Keyboard Layout Manual
 
-- [Install and edit](#install-and-edit)
-- [Ergonomic design of this layout](#ergonomic-considerations)
-- [View of layers](#legend)
+Pictura is an ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
+
+For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation]((https://zmk.dev/docs)).
+
 
 ## At a glance…
 
-**For users who want to skip the explanation of this layout's design and jump right in, here are are a few condensed should-knows:**
+**For users who want to skip the explanation of this layout's design and jump right in, here are are a few quick should-knows:**
 
 - Made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
 - For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the layout legend below for what these shortcuts are supposed to actually do.
@@ -16,13 +17,6 @@ How does this layout compare to the popular 36-key [Miryoku layout](https://gith
   - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](#1-home-accessible-keys)
   - One-handed layers for mouse-friendly use
   - DVORAK alphas but optional [QWERTY command shortcuts](#qwerty-commands-and-hand-matching)
-
-## Install and Edit
-
-- Download the most recent [Actions workflow](https://github.com/picturamundi/zmk-config/actions) artifact for .uf2 files that are ready to flash to your controller.
-- To edit the layout, download the [zmk-config](https://github.com/picturamundi/zmk-config) folder. In order to flash your edited files to a controller, you'll need to [set up ZMK on your machine](https://zmk.dev/docs/user-setup).
-
-See [ZMK docs](https://zmk.dev/docs) for any additional information.
 
 
 ## Ergonomic considerations
@@ -56,11 +50,9 @@ The top row accessible keys are for tab-command in applications like web browser
 The bottom row accessible keys are for symbols I want to be able to access in the middle of typing without activating another layer.
 
 
-### 3. Hand-matching
+### 2. Hand-matching
 
 **Hand-matching is when each half of a layer corresponds to what a specific hand can best and most comfortably do when that layer is activated.**
-
-<!--Hand-matching is the reason why, with the exception of the home layer, each half of every layer is dedicated to keys which are completely unrelated to the other half of that layer. On layer 4 for example, function keys and symbols don't span both halves of the keyboard like we might expect on a function row or number row, but instead each are compartmentalized on one half of the layer.-->
 
 Ergonomically speaking, it's not enough that each layer be specialized; each layer needs to be specialized _for each hand_. 
 
@@ -86,7 +78,6 @@ Two of the secondary halves are one-handed (1h) mouse-friendly halves, which lea
 One last thing about hand-matching. The left side of layer 3 is reserved for one-handed commands so that I can easily copy, paste, undo etc. while my hand is resting on a mouse.
 
 It just so happens that QWERTY keyboards are already set up to do exactly this. Since many DVORAK typists are familiar with QWERTY shortcut positions, and may even have QWERTY legends on their keys (I know I do), these one-handed command keys are QWERTY, with a few additions.
-
 
 ## Legend
 
