@@ -1,6 +1,8 @@
 # Pictura Keyboard Layout Manual
 
-Pictura is an ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware. <!--You can read about how and why I created it as part of a longstanding interest in various writing tools and systems at [picturamundi.com](https://www.picturamundi.com).-->
+Pictura is an ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware. 
+
+<!--You can read about how and why I created it as part of ongoing interest and experimentation with various writing tools and systems at [picturamundi.com](https://www.picturamundi.com).-->
 
 For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
@@ -11,22 +13,23 @@ For an explanation of the layout's design, see the [ergonomics section](#ergonom
 
 **For users who want to skip the explanation of this layout's design, here are the condensed should-knows:**
 
-- 36-key layout made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92). Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this with the middle thumb key for something like a Corne.
+- 36-key layout made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this inner key with the middle thumb key for something like a Corne.
 ![microdox](/images/microdox-bud.svg)
 _Microdox form-factor_
 
-- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below for what these shortcuts are supposed to actually do.
+- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below if ever you're confused about what these shortcuts in the keymap are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
   - Tap-Shift for less finger strain when typing, with the option of a tradition hold-shift in the form of a home-row mod
   - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](#1-home-accessible-keys)
   - One-handed layers for mouse-friendly use
   - DVORAK alphas with optional [QWERTY command shortcuts](#qwerty-commands-and-hand-matching)
+  - Eventually, when I get around to installing rotary encoders on my device, the plan is to support them with much more versatile media inputs.
 
 
 ## Ergonomic considerations
 
-This isn't the place to belabor points about ergonomic layouts, or sub-40% keyboards, or the advantages of using a custom firmware, all of which aren't unique to this layout and have been written about elsewhere. I'll summarize these general features in this brief list:
+This isn't the place to explain at length yet again what are often cited as potential ergonomic advantages of programmable, tiny keyboards like the Microdox for touch-typists. I'll only briefly list this potential advantages below, and note that they need to be nuanced.
 
 - Hardware 
   - **36-key layout**: Minimise wrist movement for touch-typists by placing all keys within immediate reach of fingers resting on the home row. Also makes it easier to type without ever looking at the keyboard — even for numbers, function keys, etc.
@@ -36,7 +39,11 @@ This isn't the place to belabor points about ergonomic layouts, or sub-40% keybo
   - **Layers**: Compensate for reduced number of keys by using layers (think Shift key on steroids).
   - **Tap-hold**: Get more functionality out of each key by programming a tap output as well as a hold output, as opposed to having dedicated hold keys (e.g. mods) and dedicated tap keys (e.g. letters, numbers. etc.)
 
-When it comes to this specific layout, there are two main ergonomic features that I've prioritized in order to make it comfortable and fun for me to type on, and which I'll explain below. I call them:
+In reality, every one of these alternative keyboard features has pretty big disadvantages alongside the advantages. Take layers: they often simply replace the physical effort of reaching for keys with the physical effort of complicated key combos as well as the mental effort of keeping track of them.
+
+In my experience, tiny keyboards work only if you can very carefully balance the pros and cons of layers, tap-holds, and so on, in order to get them to behave well in unison.
+
+There are two main ergonomic features that I've prioritized in order to try and solve things like the layer problem, making it comfortable and fun for me to type with this layout. I call them:
 
 1. Home accessible keys
 2. Hand-matching
@@ -44,11 +51,11 @@ When it comes to this specific layout, there are two main ergonomic features tha
 
 ### 1. Home accessible keys
 
-**Home-accessible keys are what I call inputs that are quickly accessible by long-pressing a home-layer key if the user does not want to activate the layer that key is available on as a tap-function.**
+**Home-accessible keys are one of my solutions to the layer problem. It's what I call non-home layer inputs that are also made available on the home layer for easy non-repeat use via a long-press.**
 
-As with many ergonomic layouts, the home layer — in fact, every layer — has home-row modifiers which are activated when a home-row key is long-pressed.
+As with many ergonomic layouts, the home layer — in fact, every layer — has home-row modifiers which are activated when a home-row key is long-pressed (held down for more than 120 milliseconds).
 
-However, the top-row and bottom row of the alpha block also provide long-hold inputs. These are inputs which you _could_ access normally by finding them in their assigned layers, but they are also available via hold on the home layer for extra convenience. It often feels more effortless to make a quick 120ms+ hold with one finger than to have to make the key combo requires to access another layer, provided the key doesn't need to repeat.
+However, in this layout, the top-row and bottom row of the alpha block also give long-press inputs. They are all inputs which you _could_ access normally by finding them in their assigned layers, but which are also available via long-press on the home layer for extra convenience. It often feels more effortless to make a quick 120ms+ hold with one finger than to have to make the key combo requires to access another layer, provided the key doesn't need to repeat.
 
 **Top row accessible keys**: tab-command in applications like web browsers. I also use them to control tabs in my IDE, my file explorer, my writing app, and more. The first key opens the first tab, the second key opens the second tab, etc.
 
@@ -66,7 +73,7 @@ Symbols   |  !  |  ?  |  (  |  )  | ESC |  | CPL |  -  |  <  |  {  |  /  |
           `-----'-----'-----'-----'-----'  `-----'-----'-----'-----'-----'
 ```
 
-It is rare to be able to access something like an angled bracket or Cmd-5 from the home layer of such a small keyboard, but this is a game changer for me.
+It is rare to be able to access something like an angled bracket or Cmd-5 from the home layer of such a small keyboard, but this is a game changer for me when it comes to very frequently used inputs that don't fit on a regular alpha block.
 
 
 ### 2. Hand-matching
@@ -92,7 +99,7 @@ The chart below summarizes the hand-matching logic of each layer:
 
 Two of the secondary halves are one-handed (1h) mouse-friendly halves, which leaves only two truly non-hand-matched halves: the media keys and the function keys. I just don't use them much…
 
-##### QWERTY commands and hand-matching
+#### QWERTY commands and hand-matching
 
 One last thing about hand-matching. The left side of layer 3 is reserved for one-handed commands so that I can easily copy, paste, undo etc. while my hand is resting on a mouse.
 
