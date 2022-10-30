@@ -11,10 +11,11 @@ For an explanation of the layout's design, see the [ergonomics section](#ergonom
 
 **For users who want to skip the explanation of this layout's design, here are the condensed should-knows:**
 
-- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below for what these shortcuts are supposed to actually do.
-- Made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind, which has a very retracted thumb-cluster. Outer and middle thumb keys could probably be swapped for something like a Corne.
+- 36-key layout made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92). Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this with the middle thumb key for something like a Corne.
 ![microdox](/images/microdox-bud.svg)
 _Microdox form-factor_
+
+- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts key-combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below for what these shortcuts are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
   - Tap-Shift for less finger strain when typing, with the option of a tradition hold-shift in the form of a home-row mod
@@ -28,14 +29,14 @@ How does this layout compare to the popular 36-key [Miryoku layout](https://gith
 This isn't the place to belabor points about ergonomic layouts, or sub-40% keyboards, or the advantages of using a custom firmware, all of which aren't unique to this layout and have been written about elsewhere. I'll summarize these general features in this brief list:
 
 - Hardware 
-  - **36-key layout**: Minimise wrist movement for touch-typists by placing all keys within immediate reach of fingers resting on the home row. Also makes it easier to type without ever looking at the keyboard, ever for numbers, function keys, etc.
-  - **Ortholinear or column-staggered arrangement**: Minimize the lateral finger movement that is provoked by traditional staggered key rows. Fingers primarily move straight up or down along columns, i.e. the directions they physically want to bend.
-  - **Thumb cluster**: make extended use of both thumbs, which are strong and useful digits, rather than having both of them operate only a single key (the spacebar).
+  - **36-key layout**: Minimise wrist movement for touch-typists by placing all keys within immediate reach of fingers resting on the home row. Also makes it easier to type without ever looking at the keyboard — even for numbers, function keys, etc.
+  - **Column-staggered arrangement**: Minimize the lateral finger movement that is provoked by traditional staggered key rows. Fingers move straight up or down along columns, i.e. the directions they physically want to bend.
+  - **Thumb cluster**: make full use of both thumbs, which are strong and useful digits, rather than having both of them operate only a single key (the spacebar).
 - Firmware
-  - **Layers**: compensate for reduced number of keys by using layers (think Shift key on steroids)
-  - **Tap-hold**: Instead of having dedicated hold keys (mods) and dedicated tap keys (letters, numbers. etc.), get more functionality by programming every key to have a tap output as well as a hold output.
+  - **Layers**: Compensate for reduced number of keys by using layers (think Shift key on steroids).
+  - **Tap-hold**: Get more functionality out of each key by programming a tap output as well as a hold output, as opposed to having dedicated hold keys (e.g. mods) and dedicated tap keys (e.g. letters, numbers. etc.)
 
-When it comes to this specific layout, there are two main ergonomic features that I've prioritized in order to make it comfortable and fun for me to type on. I call them:
+When it comes to this specific layout, there are two main ergonomic features that I've prioritized in order to make it comfortable and fun for me to type on, and which I'll explain below. I call them:
 
 1. Home accessible keys
 2. Hand-matching
@@ -56,13 +57,13 @@ However, the top-row and bottom row of the alpha block also provide long-hold in
 Below is a map of hold-functions on the alpha block of the home layer. See the [legend](#legend) for more visuals.
 
 ```
-          ,-----.-----.-----.-----.-----.   ,-----.-----.-----.-----.-----.
-Tabs      | LG1 | LG2 | LG3 | LG4 | LG5 |   | LG6 | LG7 | LG8 | LG9 | LG0 |
-          |-----+-----+-----+-----+-----|   |-----+-----+-----+-----+-----|
-Mods      | SFT | CTL | ALT | GUI | APS |   | MSN | GUI | ALT | CTL | SFT |
-          |-----+-----+-----+-----+-----+   |-----+-----+-----+-----+-----|
-Symbols   |  !  |  ?  |  (  |  )  | ESC |   | CPL |  -  |  <  |  {  |  /  |
-          `-----'-----'-----'-----'-----'   `-----'-----'-----'-----'-----'
+          ,-----.-----.-----.-----.-----.  ,-----.-----.-----.-----.-----.
+Tabs      | LG1 | LG2 | LG3 | LG4 | LG5 |  | LG6 | LG7 | LG8 | LG9 | LG0 |
+          |-----+-----+-----+-----+-----|  |-----+-----+-----+-----+-----|
+Mods      | SFT | CTL | ALT | GUI | APS |  | MSN | GUI | ALT | CTL | SFT |
+          |-----+-----+-----+-----+-----|  |-----+-----+-----+-----+-----|
+Symbols   |  !  |  ?  |  (  |  )  | ESC |  | CPL |  -  |  <  |  {  |  /  |
+          `-----'-----'-----'-----'-----'  `-----'-----'-----'-----'-----'
 ```
 
 It is rare to be able to access something like an angled bracket or Cmd-5 from the home layer of such a small keyboard, but this is a game changer for me.
@@ -115,7 +116,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |  '  |  ,  |  .  |  P  |  Y  |          |  F  |  G  |  C  |  R  |  L  |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |  A  |  O  |  E  |  U  |  I  |          |  D  |  H  |  T  |  N  |  S  |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |  ;  |  Q  |  J  |  K  |  X  |          |  B  |  M  |  W  |  V  |  Z  |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -126,7 +127,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 | LG1 | LG2 | LG3 | LG4 | LG5 |          | LG6 | LG7 | LG8 | LG9 | LG0 |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | SFT | CTL | ALT | GUI | APS |          | MSN | GUI | ALT | CTL | SFT |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |  !  |  ?  |  (  |  )  | ESC |          | CPL |  -  |  <  |  {  |  /  |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -144,7 +145,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     | <<<*|  ^  | >>>*|     |          |  ,  |  7  |  8  |  9  |  0  |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | CLP*|  <  |  v  |  >  |     |          |  .  |  4  |  5  |  6  | RET |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     | BCK*|     | FWD*|     |          |  *  |  1  |  2  |  3  |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -155,7 +156,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     |     |     |     |     |          |     |     |     |     |     |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | SFT | CTL | ALT | GUI |     |          |     | GUI | ALT | CTL | SFT |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -180,7 +181,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     | <<< |  ^  | >>> |     |          | MUT | VLD | VLU | BRD | BRU |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | CLP |  <  |  v  |  >  |     |          | REW | PLY | FFW | SKB | SKF |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     | LG[ |     | LG] |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -191,7 +192,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     |     |     |     |     |          |     |     |     |     |     |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | SFT | CTL | ALT | GUI |     |          |     | GUI | ALT | CTL | SFT |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -209,7 +210,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 | LGQ | LGW | LGE | LGR | LGO |          |  (  |  &  |  *  |  `  |  )  |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | LGA | LGS | LGD | LGF | LGN |          |  {  |  $  |  %  |  ^  |  }  |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | LGZ | LGX | LGC | LGV | LGM |          |  [  |  !  |  @  |  #  |  ]  |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -220,7 +221,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     |     |     |     |     |          |     |     |     |     |     |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | SFT | CTL | ALT | GUI |     |          |     | GUI | ALT | CTL | SFT |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -238,7 +239,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |  <  |  >  |  …  |  \  |  |  |          |     | F7  | F8  | F9  | F12 |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |  “  |  ”  |  «  |  »  |  €  |          |     | F4  | F5  | F6  | F11 |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----+
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----+
 | en– | em— |  =  |  +  |  ≠  |          |     | F1  | F2  | F3  | F10 |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.
@@ -249,7 +250,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     |     |     |     |     |          |     |     |     |     |     |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -268,7 +269,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     |     | FLS | RST |     |          |     | RST | FLS |     |     |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 | BTC | BT2 | BT1 | BT0 |     |          |     | BT0 | BT1 | BT2 | BTC |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
@@ -279,7 +280,7 @@ It just so happens that QWERTY keyboards are already set up to do exactly this. 
 |     |     |     |     |     |          |     |     |     |     |     |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
-|-----+-----+-----+-----+-----+          |-----+-----+-----+-----+-----|
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     |     |     |     |     |          |     |     |     |     |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.      
