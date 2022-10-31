@@ -73,6 +73,7 @@ Anything marked as `HOLD` only outputs the specified keypress when the key is he
   - APS: Uses the MacOS App Switcher to switch to the previous application. You can achieve the same thing with `Cmd-Tab`; this option is mouse friendly since it only requires the left hand, but is only practical for switching to the most recent app on the app switcher.
   - MSN: Mission control on MacOS (`Opt-Up`)
   - CPL: Caps Lock
+- `MO1` etc. : Activate layer 1 when pressed down
 
 
 ### Layer 1
@@ -84,7 +85,7 @@ Anything marked as `HOLD` only outputs the specified keypress when the key is he
 ,-----.-----.-----.-----.-----.   TAP    ,-----.-----.-----.-----.-----.
 |     | <<< |  ^  | >>> |     |          |  ,  |  7  |  8  |  9  |  0  |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
-| CLP*|  <  |  v  |  >  |     |          |  .  |  4  |  5  |  6  | RET |
+| CLP |  <  |  v  |  >  |     |          |  .  |  4  |  5  |  6  | RET |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |     | <== |     | ==> |     |          |  *  |  1  |  2  |  3  |     |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
@@ -184,11 +185,11 @@ Anything marked as `HOLD` only outputs the specified keypress when the key is he
 
 ```
 ,-----.-----.-----.-----.-----.   TAP    ,-----.-----.-----.-----.-----.
-|  <  |  >  |  …  |  \  |  |  |          |     | F7  | F8  | F9  | F12 |
+|  <  |  >  |  …  |  \  |  |  |          |     | F7  | F8  | F9  | F10 |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |  “  |  ”  |  «  |  »  |  €  |          |     | F4  | F5  | F6  | F11 |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----+
-| en– | em— |  =  |  +  |  ≠  |          |     | F1  | F2  | F3  | F10 |
+| en– | em— |  =  |  +  |  ≠  |          |     | F1  | F2  | F3  | F12 |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.
       |       |       |       |          |       |  XXX  |       |
