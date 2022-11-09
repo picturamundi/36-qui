@@ -60,9 +60,9 @@
             label = "B_CAPSLOCK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = 
+            bindings =  
                 <&lst 1 LSHFT>, 
-                <&kp CAPS>;
+                <&lmt CAPS B>;
         };
     };
     
