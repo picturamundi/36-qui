@@ -55,12 +55,14 @@
             flavor = "tap-preferred"; 
             bindings = <&mo>, <&sk>;
         };
-        bc: b_capslock {
+        lc: lst_capslock {
             compatible = "zmk,behavior-tap-dance";
             label = "B_CAPSLOCK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp B>, <&kp CAPS>;
+            bindings = 
+                <&lst 1 LSHFT>, 
+                <&kp CAPS>;
         };
     };
     
@@ -76,7 +78,7 @@
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
                     &ht EXCL SEMI   &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X           &ht CAPS B     &ht MINUS M    &ht LT W         &ht LBRC V      &ht FSLH Z     
                 // ╰───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────╯
-                                                        &bc        &lt 3 BSPC      &lst 1 LSHFT         &lt 2 SPACE    &lt 4 TAB      &mo 5            
+                                                        &mo 5        &lt 3 BSPC      &lc         &lt 2 SPACE    &lt 4 TAB      &mo 5            
                 //                                    ╰────────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴────────────────╯
             >;
         };
