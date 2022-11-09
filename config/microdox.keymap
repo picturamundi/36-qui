@@ -58,7 +58,7 @@
         ltd: lst-plus-tap-dance {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MY";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             bindings =
                 <&kp A>,
