@@ -29,7 +29,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT-MOD-TAP";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <120>;
             quick_tap_ms = <100>;
             global-quick-tap;
@@ -42,7 +42,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <120>;
             quick_tap_ms = <100>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             global-quick-tap;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
