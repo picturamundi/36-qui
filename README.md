@@ -108,7 +108,7 @@ Anything marked as `HOLD` only outputs the specified keypress when the key is he
 - `<` `>` `^` `v` : left, right, up, down
 - `<<<` `>>>`: swipe left and right between fullscreen apps in macOS, `Opt-left` and `Opt-right`
 - `CLP`: Clipboard history — this is a shortcut configured in a third party app, `Cmd-Opt-Ctrl-V`
-- `<==`: Back, `Cmd-leftBracket`
+    `<==`: Back, `Cmd-leftBracket`
 - `==>`: Forward, `Cmd-rightBracket`
 - `SPL`: Spotlight search, `Cmd-Space` — the goal here is to reproduce similar thumb movements to what one would make hitting `Cmd-Space` on a mac
 
@@ -185,11 +185,11 @@ Anything marked as `HOLD` only outputs the specified keypress when the key is he
 
 ```
 ,-----.-----.-----.-----.-----.   TAP    ,-----.-----.-----.-----.-----.
-|  <  |  >  |  …  |  \  |  |  |          |     | F7  | F8  | F9  | F10 |
+|  <  |  |  |  \  |  /  |  >  |          |     | F7  | F8  | F9  | F10 |
 |-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
 |  “  |  ”  |  «  |  »  |  €  |          |     | F4  | F5  | F6  | F11 |
-|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----+
-| en– | em— |  =  |  +  |  ≠  |          |     | F1  | F2  | F3  | F12 |
+|-----+-----+-----+-----+-----|          |-----+-----+-----+-----+-----|
+| em– | en— |  -  |  +  |  =  |          |     | F1  | F2  | F3  | F12 |
 `-----'-----'-----'-----'-----'          `-----'-----'-----'-----'-----'
       ,-------.-------.-------.          ,-------.-------.-------.
       |       |       |       |          |       |  XXX  |       |
