@@ -61,8 +61,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings =
-                <&kp CAPSLOCK>,
-                <&sk LSHFT>;
+                <&kp A>,
+                <&kp B>;
         };
     };
     
