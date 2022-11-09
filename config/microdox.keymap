@@ -62,7 +62,7 @@
             tapping-term-ms = <200>;
             bindings =
                 <&sk LSHFT>,
-                <&kp SPACE>;
+                <&kp CAPSLOCK>;
         };
     };
     
