@@ -59,10 +59,10 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MY";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings =
-                <&sk LSHFT>,
-                <&kp CAPS>;
+                <&kp A>,
+                <&kp B>;
         };
     };
     
