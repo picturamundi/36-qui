@@ -60,7 +60,6 @@
             label = "B_CAPSLOCK";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            tap-ms = <200>;
             bindings = <&kp B>, <&kp CAPS>;
         };
     };
