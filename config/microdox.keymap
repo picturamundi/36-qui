@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
+// add mods to 4L
+
 #define MOUSE   2
 
 &sk {
@@ -205,7 +207,7 @@
                 // ╭───────────┬───────────────┬───────────────┬───────────────┬─────────────╮     ╭───────────┬───────────────┬───────────────┬───────────────┬──────────────╮
                     &trans      &trans          &trans          &trans          &trans              &trans      &mwh SCROLL_VERT(-40)          &mouse_u        &trans          &trans        
                 // ├───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &kp LSHFT   &kp LCTRS       &kp LALT        &kp LGUI        &trans              &mkp LCLK   &mouse_l        &mouse_d        &mouse_r        &mkp RCLK      
+                    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI        &trans              &mkp LCLK   &mouse_l        &mouse_d        &mouse_r        &mkp RCLK      
                 // ├───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &trans      &trans          &trans          &trans          &trans              &trans      &mwh SCROLL_VERT(40)          &trans          &trans          &trans        
                 // ╰───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────╯
