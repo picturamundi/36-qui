@@ -7,7 +7,6 @@
 
 // add mods to L4L
 // swap L5 and L6
-// rename variables
 
 #define MOUSE   2
 
@@ -90,6 +89,15 @@
             flavor = "tap-preferred"; 
             bindings = <&mo>, <&sk>;
         };
+        lc: lst_capslock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "B_CAPSLOCK";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings =  
+                <&lst 1 LSHFT>, 
+                <&lmt CAPS B>;
+        };
         mouse_l: mouse_left {
             compatible = "zmk,behavior-mod-morph";
             label = "MOUSE_LEFT";
@@ -142,7 +150,7 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
                     &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &kp lmt                    &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &lmt RSHFT RET
+                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &str RSHFT RET
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans         
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
@@ -156,7 +164,7 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────────┬───────────────────┬───────────────────┬────────────────────╮
                     &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp C_RW        &kp C_PP            &kp C_FF            &kp C_PREV          &kp C_NEXT          
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &lmt LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp C_MUTE      &rmt RGUI C_VOL_DN  &rmt RALT C_VOL_UP  &rmt RCTRL C_BRI_DN &lmt RSHFT C_BRI_UP  
+                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp C_MUTE      &rmt RGUI C_VOL_DN  &rmt RALT C_VOL_UP  &rmt RCTRL C_BRI_DN &str RSHFT C_BRI_UP  
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
                     &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &trans          &trans              &trans              &trans              &trans               
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────╯
@@ -170,7 +178,7 @@
                 // ╭───────────────────┬───────────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────────┬────────────────────╮
                     &kp LG(Q)           &kp LG(W)           &kp LG(E)       &kp LG(R)       &kp LG(O)       &kp LPAR       &kp AMPS        &kp STAR        &kp GRAVE            &kp RPAR             
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
-                    &lmt LSHFT LG(A)    &lmt LCTRL LG(S)    &lmt LALT LG(D) &lmt LGUI LG(F) &kp LG(N)       &kp LBRC        &rmt RGUI DLLR  &rmt RALT PRCNT &rmt RCTRL CARET    &lmt RSHFT RBRC      
+                    &stl LSHFT LG(A)    &lmt LCTRL LG(S)    &lmt LALT LG(D) &lmt LGUI LG(F) &kp LG(N)       &kp LBRC        &rmt RGUI DLLR  &rmt RALT PRCNT &rmt RCTRL CARET    &str RSHFT RBRC      
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
                     &kp LG(Z)           &kp LG(X)           &kp LG(C)       &kp LG(V)       &kp LG(M)       &kp LBKT        &kp EXCL        &kp AT          &kp HASH            &kp RBKT             
                 // ╰───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────╯
@@ -184,7 +192,7 @@
                 // ╭───────────────────┬───────────────────┬───────────────┬───────────────────┬─────────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬─────────────────╮
                     &kp LT              &kp PIPE            &kp BSLH        &kp FSLH            &kp GT              &kp PSCRN       &kp F7          &kp F8          &kp F9          &kp F10           
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────────┼─────────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼─────────────────┤
-                    &lmt LSHFT LA(LBKT) &kp LA(LS(LBKT))    &kp LA(BSLH)    &kp LA(LS(BSLH))    &kp LA(LS(N2))      &kp SLCK        &rmt RGUI F4    &rmt RALT F5    &rmt RCTRL F6   &lmt  RSHFT F11   
+                    &stl LSHFT LA(LBKT) &kp LA(LS(LBKT))    &kp LA(BSLH)    &kp LA(LS(BSLH))    &kp LA(LS(N2))      &kp SLCK        &rmt RGUI F4    &rmt RALT F5    &rmt RCTRL F6   &str  RSHFT F11   
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────────┼─────────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼─────────────────┤
                     &kp LA(LS(MINUS))   &kp LA(MINUS)       &kp MINUS       &kp PLUS            &kp EQUAL           &kp PAUSE_BREAK &kp F1          &kp F2          &kp F3          &kp F12           
                 // ╰───────────────────┼───────────────────┼───────────────┼───────────────────┼─────────────┤     ╰───────────────┼───────────────┼───────────────┼───────────────┼─────────────────┤
