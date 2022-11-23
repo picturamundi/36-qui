@@ -9,7 +9,7 @@
 // swap L5 and L6
 // rethink symbol layers; put question mark and other common symbols on right hand layer
 
-#define MOUSE   2
+#define MOUSE   6
 
 &sk {
     release-after-ms = <1500>;
