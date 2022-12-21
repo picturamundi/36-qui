@@ -8,20 +8,26 @@
 // add mods to L4L n
 // swap L5 and L6
 // rethink symbol layers; put question mark and other common symbols on right hand layer
+// play around with the mouse keys and scroll keys
 
 #define MOUSE   6
 
 &sk {
-    release-after-ms = <1500>;
+    release-after-ms = <500>;
     quick-release;
     /delete-property/ ignore-modifiers;
 };
 &lt {
     quick-tap-ms = <200>;
 };
+&mmv {
+    time-to-max-speed-ms = <1000>;
+    acceleration-exponent=<1>;
+};
 &mwh {
     time-to-max-speed-ms = <2000>;
     acceleration-exponent=<1>;
+
 };
 
 / {
