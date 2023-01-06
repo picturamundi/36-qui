@@ -13,7 +13,7 @@
 #define MOUSE   6
 
 &sk {
-    release-after-ms = <250>;
+    release-after-ms = <350>;
     quick-release;
     /delete-property/ ignore-modifiers;
 };
