@@ -142,7 +142,7 @@
                 // ╭───────────────┬──────────────────┬────────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬────────────────┬───────────────┬──────────────╮
                     &ht LG(N1) SQT  &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y        &ht LG(N6) F   &ht LG(N7) G   &ht LG(N8) C     &ht LG(N9) R    &ht LG(N0) L   
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
-                    &stl LSHFT A    &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht LG(TAB) I       &ht LC(LA(LG(V))) D   &rmt RGUI H    &rmt RALT T      &rmt RCTRL N    &str RSHFT S   
+                    &stl LSHFT A    &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht RET I           &ht LC(LA(LG(V))) D   &rmt RGUI H    &rmt RALT T      &rmt RCTRL N    &str RSHFT S   
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
                     &ht EXCL SEMI   &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X           &ht CAPS B     &ht MINUS M    &ht LBKT W       &ht LBRC V      &ht FSLH Z     
                 // ╰───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────╯
@@ -156,9 +156,9 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
                     &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &str RSHFT RET
+                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp RET         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &trans
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans         
+                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans      
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
                                                                 &trans          &trans          &trans          &kp SPACE       &kp N0          &trans                                         
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────┴───────────────╯                               
@@ -168,11 +168,11 @@
         nav-media {
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────────┬───────────────────┬───────────────────┬────────────────────╮
-                    &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp C_RW        &kp C_PP            &kp C_FF            &kp C_PREV          &kp C_NEXT          
+                    &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp INS         &kp C_PP            &kp C_FF            &kp C_PREV          &kp DEL          
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp C_MUTE      &rmt RGUI C_VOL_DN  &rmt RALT C_VOL_UP  &rmt RCTRL C_BRI_DN &str RSHFT C_BRI_UP  
+                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_VOL_UP  &rmt RCTRL C_BRI_DN &kp END  
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &trans          &trans              &trans              &trans              &trans               
+                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &kp PG_UP       &trans              &trans              &trans              &kp PG_DN           
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────╯
                                                                 &trans          &trans          &trans          &trans          &trans              &trans                                                       
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────────┴───────────────────╯                                         

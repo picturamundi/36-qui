@@ -18,7 +18,7 @@ _Microdox_
 - For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below if ever you're confused about what these shortcuts in the keymap are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
-  - Tap-Shift for less finger strain when typing, with the option of a tradition hold-shift in the form of a home-row mod
+  - Tap-Shift for less finger strain when typing, with the option of a traditional hold-shift in the form of a home-row mod
   - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](#1-home-accessible-keys)
   - One-handed layers for mouse-friendly use, with inputs that are also available on two-handed layers for more ergonomic use when both hands are on the keyboard
   - DVORAK alphas with optional [QWERTY command shortcuts](#qwerty-commands-and-hand-matching)
