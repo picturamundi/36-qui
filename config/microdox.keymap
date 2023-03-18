@@ -154,13 +154,13 @@
         nav-num {
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
-                    &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
+                    &trans                      &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp RET         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &trans
+                    &trans                      &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp RET         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &kp RET
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans      
+                    &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans      
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
-                                                                &trans          &trans          &trans          &kp SPACE       &kp N0          &trans                                         
+                                                                &trans          &trans          &trans          &kp SPACE       &kp BSPC        &trans                                         
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────┴───────────────╯                               
             >;
         };
@@ -168,13 +168,13 @@
         nav-media {
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────────┬───────────────────┬───────────────────┬────────────────────╮
-                    &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp INS         &kp C_PP            &kp C_FF            &kp C_PREV          &kp DEL          
+                    &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp INS         &kp C_PREV            &kp C_PP          &kp C_NEXT          &kp DEL          
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_VOL_UP  &rmt RCTRL C_BRI_DN &kp END  
+                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_MUTE    &rmt RCTRL C_VOL_UP &kp END  
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &kp PG_UP       &trans              &trans              &trans              &kp PG_DN           
+                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &kp PG_UP       &kp C_BRI_DN        &trans              &kp C_BRI_UP        &kp PG_DN           
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────╯
-                                                                &trans          &trans          &trans          &trans          &trans              &trans                                                       
+                                                                &trans          &kp BSPC        &kp SPACE       &trans          &trans              &trans                                                       
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────────┴───────────────────╯                                         
             >;
         };
@@ -188,7 +188,7 @@
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
                     &kp LG(Z)           &kp LG(X)           &kp LG(C)       &kp LG(V)       &kp LG(M)       &kp LBKT        &kp EXCL        &kp AT          &kp HASH            &kp RBKT             
                 // ╰───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────╯
-                                                            &trans          &trans          &trans          &trans          &trans          &trans                                                   
+                                                            &trans          &trans          &trans          &kp SPACE       &kp BSPC          &trans                                                   
                 //                                         ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────┴───────────────╯                                         
             >;
         };
