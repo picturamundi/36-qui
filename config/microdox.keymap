@@ -156,7 +156,7 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
                     &trans                      &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &trans                      &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp RET         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &kp RET
+                    &kp LSHFT                   &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp RET         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &kp RET
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans      
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
@@ -168,11 +168,11 @@
         nav-media {
             bindings = <
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────────┬───────────────────┬───────────────────┬────────────────────╮
-                    &kp INS                     &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &kp DEL         &kp INS         &kp C_PREV            &kp C_PP          &kp C_NEXT          &kp DEL          
+                    &trans                      &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans         &kp INS         &kp C_PREV            &kp C_PP          &kp C_NEXT          &kp DEL          
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &stl LSHFT HOME             &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp END         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_MUTE    &rmt RCTRL C_VOL_UP &kp END  
+                    &kp LSHFT                   &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp RET         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_MUTE    &rmt RCTRL C_VOL_UP &kp END  
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &kp PG_UP                   &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp PG_DN       &kp PG_UP       &kp C_BRI_DN        &trans              &kp C_BRI_UP        &kp PG_DN           
+                    &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC       &kp PG_UP       &kp C_BRI_DN        &trans              &kp C_BRI_UP        &kp PG_DN           
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────╯
                                                                 &trans          &kp BSPC        &kp SPACE       &trans          &trans              &trans                                                       
                 //                                             ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────────┴───────────────────╯                                         
@@ -210,7 +210,7 @@
         controller {
             bindings = <
                 // ╭───────────┬───────────────┬───────────────┬───────────────┬─────────────╮     ╭───────────┬───────────────┬───────────────┬───────────────┬──────────────╮
-                    &trans      &trans          &bootloader     &reset          &trans              &trans      &reset          &bootloader     &ext_power EXT_POWER_OFF_CMD          &ext_power EXT_POWER_ON_CMD
+                    &bootloader &trans          &trans          &reset          &trans              &trans      &reset          &ext_power EXT_POWER_OFF_CMD          &ext_power EXT_POWER_ON_CMD &bootloader
                 // ├───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &bt BT_CLR  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0    &trans              &trans      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_CLR     
                 // ├───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────┤
