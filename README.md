@@ -4,7 +4,7 @@ Pictura is a ergonomic keyboard layout compatible with devices running the ZMK k
 
 For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
-<!--While this file briefly summarizes the [main features](#at-a-glance) of the layout and provides a [visual legend](#legend) for each layer, a more in-depth explanation of its ergonomic design can be found at [picturamundi.com/type](https://picturamundi.com/type.html).-->
+An more in-depth explanation of this layout's design can be found at [picturamundi.com/type](https://picturamundi.com/type.html).
 
 
 ## At a glance…
@@ -13,16 +13,16 @@ A couple of things you should know before using this firmware for yourself:
 
 - It's a 36-key layout made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this inner key with the middle thumb key for something like a Corne.
 ![microdox](/images/microdox-bud.svg)
-_Microdox_
 
-- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts combos that work on my personal machine, but they may have to be customized for other devices. See the [layout legend](#legend) below if ever you're confused about what these shortcuts in the keymap are supposed to actually do.
+- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts combos that work on my personal machine, but they may need to be customized for other devices. See the [layout legend](https://picturamundi.com/type.html) if ever you're confused about what these shortcuts in the keymap file are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
-  - Tap-Shift for less finger strain when typing, with the option of a traditional hold-shift in the form of a home-row mod
-  - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](#1-home-accessible-keys)
-  - One-handed layers for mouse-friendly use, with inputs that are also available on two-handed layers for more ergonomic use when both hands are on the keyboard
-  - DVORAK alphas with optional [QWERTY command shortcuts](#qwerty-commands-and-hand-matching)
-  - Eventually, when I get around to installing rotary encoders on my Microdox, the plan is to support them with much more practical media inputs.
+  - Tap-Shift for more effortless typing, with the additional option of a traditional hold-shift in the form of a home-row mod.
+  - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](https://picturamundi.com/type.html#home-layer-hold).
+  - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
+  - DVORAK alphas with optional [QWERTY command shortcuts](https://picturamundi.com/type.html#qwerty-command).
+
+<!--
 
 ## Legend
 
@@ -245,3 +245,5 @@ Controller commands
   - Bluetooth
     - `BT0` etc. Select profile 
     - `BTC` Clear profile
+
+-->
