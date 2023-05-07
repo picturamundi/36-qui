@@ -5,11 +5,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
-// add mods to L4L n
-// swap L5 and L6
-// rethink symbol layers; put question mark and other common symbols on right hand layer
-// play around with the mouse keys and scroll keys
-
 #define MOUSE   6
 
 &sk {
@@ -20,6 +15,7 @@
 &lt {
     quick-tap-ms = <200>;
 };
+/*
 &mmv {
     time-to-max-speed-ms = <1000>;
     acceleration-exponent=<1>;
@@ -27,8 +23,8 @@
 &mwh {
     time-to-max-speed-ms = <2000>;
     acceleration-exponent=<1>;
-
 };
+*/
 
 / {
     macros {
@@ -63,27 +59,6 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
         };
-        stl: shift-tap-left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT-TAP-LEFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            quick_tap_ms = <100>;
-            flavor = "balanced";
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
-        };
-        str: shift-tap-right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SHIFT-TAP-RIGHT";
-            #binding-cells = <2>;
-            tapping-term-ms = <120>;
-            quick_tap_ms = <100>;
-            flavor = "balanced";
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
         };
         lst: layer-shift-tap {
             compatible = "zmk,behavior-hold-tap";
@@ -95,15 +70,7 @@
             flavor = "tap-preferred"; 
             bindings = <&mo>, <&sk>;
         };
-        lc: lst_capslock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "B_CAPSLOCK";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings =  
-                <&lst 1 LSHFT>, 
-                <&lmt CAPS B>;
-        };
+        /*
         mouse_l: mouse_left {
             compatible = "zmk,behavior-mod-morph";
             label = "MOUSE_LEFT";
@@ -132,6 +99,7 @@
             bindings = <&mmv MOVE_VERT(4000)>, <&mmv MOVE_VERT(2000)>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        */
     };
 
     keymap {
@@ -142,7 +110,7 @@
                 // ╭───────────────┬──────────────────┬────────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬────────────────┬───────────────┬──────────────╮
                     &ht LG(N1) SQT  &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y        &ht LG(N6) F   &ht LG(N7) G   &ht LG(N8) C     &ht LG(N9) R    &ht LG(N0) L   
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
-                    &stl LSHFT A    &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht TAB I           &ht LC(LA(LG(V))) D   &rmt RGUI H    &rmt RALT T      &rmt RCTRL N    &str RSHFT S   
+                    &lmt LSHFT A    &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht TAB I           &ht LC(LA(LG(V))) D   &rmt RGUI H    &rmt RALT T      &rmt RCTRL N    &rmt RSHFT S   
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
                     &ht EXCL SEMI   &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X           &ht CAPS B     &ht MINUS M    &ht LBKT W       &ht LBRC V      &ht FSLH Z     
                 // ╰───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────╯
@@ -156,7 +124,7 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
                     &kp LA(UP)                  &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &stl LSHFT LG(TAB)          &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp TAB         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &trans
+                    &lmt LSHFT LG(TAB)          &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp TAB         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &trans
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans      
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
@@ -170,7 +138,7 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────────┬───────────────────┬───────────────────┬────────────────────╮
                     &kp LA(UP)                  &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans         &kp INS         &kp C_PREV            &kp C_PP          &kp C_NEXT          &kp DEL          
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &stl LSHFT LG(TAB)          &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp TAB         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_MUTE    &rmt RCTRL C_VOL_UP &kp END  
+                    &lmt LSHFT LG(TAB)          &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp TAB         &kp HOME        &rmt RGUI C_VOL_DN  &rmt RALT C_MUTE    &rmt RCTRL C_VOL_UP &kp END  
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
                     &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC       &kp PG_UP       &kp C_BRI_DN        &trans              &kp C_BRI_UP        &kp PG_DN           
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────╯
@@ -184,7 +152,7 @@
                 // ╭───────────────────┬───────────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────────┬────────────────────╮
                     &kp LG(Q)           &kp LG(W)           &kp LG(E)       &kp LG(R)       &kp LG(O)       &kp LPAR       &kp AMPS        &kp STAR        &kp GRAVE            &kp RPAR             
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
-                    &stl LSHFT LG(A)    &lmt LCTRL LG(S)    &lmt LALT LG(D) &lmt LGUI LG(F) &kp LG(N)       &kp LBRC        &rmt RGUI DLLR  &rmt RALT PRCNT &rmt RCTRL CARET    &str RSHFT RBRC      
+                    &lmt LSHFT LG(A)    &lmt LCTRL LG(S)    &lmt LALT LG(D) &lmt LGUI LG(F) &kp LG(N)       &kp LBRC        &rmt RGUI DLLR  &rmt RALT PRCNT &rmt RCTRL CARET    &rmt RSHFT RBRC      
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────┤
                     &kp LG(Z)           &kp LG(X)           &kp LG(C)       &kp LG(V)       &kp LG(M)       &kp LBKT        &kp EXCL        &kp AT          &kp HASH            &kp RBKT             
                 // ╰───────────────────┼───────────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────────┼────────────────────╯
@@ -198,7 +166,7 @@
                 // ╭───────────────────┬───────────────────┬───────────────┬───────────────────┬─────────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬─────────────────╮
                     &kp LT              &kp PIPE            &kp BSLH        &kp FSLH            &kp GT              &kp PSCRN       &kp F7          &kp F8          &kp F9          &kp F10           
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────────┼─────────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼─────────────────┤
-                    &stl LSHFT LA(LBKT) &kp LA(LS(LBKT))    &kp LA(BSLH)    &kp LA(LS(BSLH))    &kp LA(LS(N2))      &kp SLCK        &rmt RGUI F4    &rmt RALT F5    &rmt RCTRL F6   &str  RSHFT F11   
+                    &lmt LSHFT LA(LBKT) &kp LA(LS(LBKT))    &kp LA(BSLH)    &kp LA(LS(BSLH))    &kp LA(LS(N2))      &kp SLCK        &rmt RGUI F4    &rmt RALT F5    &rmt RCTRL F6   &rmt  RSHFT F11   
                 // ├───────────────────┼───────────────────┼───────────────┼───────────────────┼─────────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼─────────────────┤
                     &kp LA(LS(MINUS))   &kp LA(MINUS)       &kp MINUS       &kp PLUS            &kp EQUAL           &kp PAUSE_BREAK &kp F1          &kp F2          &kp F3          &kp F12           
                 // ╰───────────────────┼───────────────────┼───────────────┼───────────────────┼─────────────┤     ╰───────────────┼───────────────┼───────────────┼───────────────┼─────────────────┤
