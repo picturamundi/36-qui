@@ -3,14 +3,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/mouse.h>
+// #include <dt-bindings/zmk/mouse.h>
 
 // add mods to L4L n
 // swap L5 and L6
 // rethink symbol layers; put question mark and other common symbols on right hand layer
 // play around with the mouse keys and scroll keys
 
-#define MOUSE   6
+// #define MOUSE   6
 
 &sk {
     release-after-ms = <350>;
@@ -224,13 +224,13 @@
         mouse {
             bindings = <
                 // ╭───────────┬───────────────┬───────────────┬───────────────┬─────────────╮     ╭───────────┬───────────────┬───────────────┬───────────────┬──────────────╮
-                    &trans      &trans          &trans          &trans          &trans              &trans      &mwh SCROLL_VERT(-40)          &mouse_u        &trans          &trans        
+                    &trans      &trans          &trans          &trans          &trans              &trans      &trans          &trans        &trans          &trans        
                 // ├───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI        &trans              &mkp LCLK   &mouse_l        &mouse_d        &mouse_r        &mkp RCLK      
+                    &kp LSHFT   &kp LCTRL       &kp LALT        &kp LGUI        &trans              &trans   &trans        &trans        &trans        &trans      
                 // ├───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &trans      &trans          &trans          &trans          &trans              &trans      &mwh SCROLL_VERT(40)          &trans          &trans          &trans        
+                    &trans      &trans          &trans          &trans          &trans              &trans      &trans          &trans          &trans          &trans        
                 // ╰───────────┼───────────────┼───────────────┼───────────────┼─────────────┤     ├───────────┼───────────────┼───────────────┼───────────────┼──────────────╯
-                                                &trans          &trans          &trans              &mkp LCLK      &trans          &trans                                         
+                                                &trans          &trans          &trans              &trans      &trans          &trans                                         
                 //                             ╰───────────────┴───────────────┴─────────────╯     ╰───────────┴───────────────┴───────────────╯                               
             >;
         };
