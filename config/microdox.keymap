@@ -146,7 +146,7 @@
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
                     &ht EXCL SEMI   &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X           &ht CAPS B     &ht MINUS M    &ht LBKT W       &ht LBRC V      &ht FSLH Z     
                 // ╰───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────╯
-                                                        &lt 6 CARET     &lt 3 BSPC      &lst 1 LSHFT        &lt 2 SPACE    &lt 4 RET      &lt 5 GRAVE                                     
+                                                        &lt 6 GRAVE     &lt 3 BSPC      &lst 1 LSHFT        &lt 2 SPACE    &lt 4 RET      &lt 5 TAB                                     
                 //                                    ╰────────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴────────────────╯
             >;
         };
@@ -238,13 +238,13 @@
         alpha-qwerty {
             bindings = <
                 // ╭───────────────┬──────────────────┬────────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬────────────────┬───────────────┬──────────────╮
-                    &ht LG(N1) SQT  &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y        &ht LG(N6) F   &ht LG(N7) G   &ht LG(N8) C     &ht LG(N9) R    &ht LG(N0) L   
+                    &ht LG(N1) Q    &ht LG(N2) W      &ht LG(N3) E     &ht LG(N4) R    &ht LG(N5) T        &ht LG(N6) Y   &ht LG(N7) U   &ht LG(N8) I     &ht LG(N9) O    &ht LG(N0) P   
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
-                    &stl LSHFT A    &lmt LCTRL O        &lmt LALT E     &lmt LGUI U     &ht TAB I           &ht LC(LA(LG(V))) D   &rmt RGUI H    &rmt RALT T      &rmt RCTRL N    &str RSHFT S
+                    &stl LSHFT A    &lmt LCTRL S        &lmt LALT D     &lmt LGUI F     &ht TAB G           &ht LC(LA(LG(V))) H   &rmt RGUI J    &rmt RALT K      &rmt RCTRL L    &str RSHFT SEMI
                 // ├───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────┤
-                    &ht EXCL SEMI   &ht QMARK Q         &ht LPAR J      &ht RPAR K      &ht ESC X           &ht CAPS B     &ht MINUS M    &ht LBKT W       &ht LBRC V      &ht FSLH Z     
+                    &ht EXCL Z   &ht QMARK X         &ht LPAR C      &ht RPAR V      &ht ESC B           &ht CAPS N     &ht MINUS M    &ht LBKT COMMA      &ht LBRC DOT      &ht FSLH SQT
                 // ╰───────────────┼──────────────────┼────────────────┼──────────────┼──────────────┤     ├──────────────┼──────────────┼────────────────┼───────────────┼──────────────╯
-                                                        &lt 6 CARET     &lt 3 BSPC      &lst 1 LSHFT        &lt 2 SPACE    &lt 4 RET      &lt 5 GRAVE                                     
+                                                        &lt 6 GRAVE     &lt 3 BSPC      &lst 1 LSHFT        &lt 2 SPACE    &lt 4 RET      &lt 5 TAB                                     
                 //                                    ╰────────────────┴──────────────┴──────────────╯     ╰──────────────┴──────────────┴────────────────╯
             >;
         };
