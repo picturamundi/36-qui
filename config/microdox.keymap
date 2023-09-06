@@ -104,34 +104,34 @@
                 <&lst 1 LSHFT>, 
                 <&lmt CAPS B>;
         };
-        mouse_l: mouse_left {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOUSE_LEFT";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_HOR(-4000)>, <&mmv MOVE_HOR(-2000)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        mouse_r: mouse_right {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOUSE_RIGHT";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_HOR(4000)>, <&mmv MOVE_HOR(2000)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        mouse_u: mouse_up {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOUSE_UP";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_VERT(-4000)>, <&mmv MOVE_VERT(-2000)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        mouse_d: mouse_down {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOUSE_DOWN";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_VERT(4000)>, <&mmv MOVE_VERT(2000)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+//        mouse_l: mouse_left {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "MOUSE_LEFT";
+//            #binding-cells = <0>;
+//            bindings = <&mmv MOVE_HOR(-4000)>, <&mmv MOVE_HOR(-2000)>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//        mouse_r: mouse_right {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "MOUSE_RIGHT";
+//            #binding-cells = <0>;
+//            bindings = <&mmv MOVE_HOR(4000)>, <&mmv MOVE_HOR(2000)>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//        mouse_u: mouse_up {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "MOUSE_UP";
+//            #binding-cells = <0>;
+//            bindings = <&mmv MOVE_VERT(-4000)>, <&mmv MOVE_VERT(-2000)>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
+//        mouse_d: mouse_down {
+//            compatible = "zmk,behavior-mod-morph";
+//            label = "MOUSE_DOWN";
+//            #binding-cells = <0>;
+//            bindings = <&mmv MOVE_VERT(4000)>, <&mmv MOVE_VERT(2000)>;
+//            mods = <(MOD_LSFT|MOD_RSFT)>;
+//        };
     };
 
     keymap {
@@ -156,7 +156,7 @@
                 // ╭───────────────────────────┬───────────────┬───────────────┬───────────────┬─────────╮     ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
                     &kp LA(UP)                  &kp LA(LEFT)    &kp UP          &kp LA(RIGHT)   &trans          &kp COMMA       &kp N7          &kp N8          &kp N9          &kp N0         
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &stl LSHFT LG(TAB)          &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp TAB         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &trans
+                    &stl LSHFT TILDE            &lmt LCTRL LEFT &lmt LALT DOWN  &lmt LGUI RIGHT &kp TAB         &kp DOT         &rmt RGUI N4    &rmt RALT N5    &rmt RCTRL N6   &trans
                 // ├───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &trans                      &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans      
                 // ╰───────────────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
