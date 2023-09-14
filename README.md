@@ -13,7 +13,7 @@ A couple of things you should know before using this firmware for yourself:
 
 - It's a 36-key layout made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this inner key with the middle thumb key for something like a Corne.
 
-![microdox](/images/microdox-bud.svg)
+![microdox](images/microdox-bud.svg)
 
 - For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts combos that work on my personal machine, but they may need to be customized for other devices. See the [layout legend](https://picturamundi.com/type.html) if ever you're confused about what these shortcuts in the keymap file are supposed to actually do.
 
@@ -22,6 +22,12 @@ How does this layout compare to the popular 36-key [Miryoku layout](https://gith
   - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](https://picturamundi.com/type.html#home-layer-hold).
   - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
   - DVORAK alphas with optional [QWERTY command shortcuts](https://picturamundi.com/type.html#qwerty-command).
+
+---
+
+![](images/0.svg)
+![](images/1-2.svg)
+![](images/3-4.svg)![](images/5-6.svg)
 
 <!--
 
