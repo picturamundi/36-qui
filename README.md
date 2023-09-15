@@ -4,30 +4,97 @@ Pictura is a ergonomic keyboard layout compatible with devices running the ZMK k
 
 For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
-An more in-depth explanation of this layout's design can be found at [picturamundi.com/type](https://picturamundi.com/type.html).
-
 
 ## At a glance…
 
 A couple of things you should know before using this firmware for yourself:
 
-- It's a 36-key layout made with a [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this inner key with the middle thumb key for something like a Corne.
+- It's a 36-key layout made with a wireless [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has has a very retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this inner key with the middle thumb key for something like a Corne.
 
 ![microdox](images/microdox-bud.svg)
 
-- For commands with no dedicated ZMK key-code (e.g. navigate backward and forward on webpages), I'm using shortcuts combos that work on my personal machine, but they may need to be customized for other devices. See the [layout legend](https://picturamundi.com/type.html) if ever you're confused about what these shortcuts in the keymap file are supposed to actually do.
+- For commands with no dedicated ZMK key-code (e.g. navigate back and forward on webpages), I'm using shortcuts combos that work on my personal machine, but which will need to be customized for other devices. See the layout legend below if ever you're confused about what these shortcuts in the .keymap file are supposed to actually do.
 
-How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project which was designed with only my own personal use in mind, here are nonetheless the key advantages for me: 
+How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project put together by someone with no programming experience with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
+
   - Tap-Shift for more effortless typing, with the additional option of a traditional hold-shift in the form of a home-row mod.
-  - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](https://picturamundi.com/type.html#home-layer-hold).
+  - Tab-control on home-layer… in fact in general [there's just more that's accessible on the home layer](#layer-0).
   - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
-  - DVORAK alphas with optional [QWERTY command shortcuts](https://picturamundi.com/type.html#qwerty-command).
+  - DVORAK alphas with optional [QWERTY command shortcuts](#layer-3).
 
----
 
-![](images/0.svg)
-![](images/1-2.svg)
-![](images/3-4.svg)![](images/5-6.svg)
+## Layer 0
+
+Top set of keys display tap inputs, bottom set of keys display hold inputs.
+![](images/00.svg)
+
+The following graphical key explains basic input types for both the home layer (layer 0) and other layers.
+
+![](images/legend.svg)
+
+Further explanation for layer 0:
+
+- `T1` - `T0` input `command-1` - `command-0` for switching to tabs in browsers, IDEs, etc.
+- `SFT`, `CTL` etc. are home row mods. Anyone who has tried to implement home row mods knows they can take quite a bit of configuration. Among other things, these parameters work wonders for me:
+	- Mods don't trigger if a key has been pressed in the last 100ms, which prevents triggering during fast typing in general.
+	- Left mods will more easily trigger when paired with right key taps. This minimized accidental triggers during rolling.
+
+Other legend abbreviations:
+
+- `CLP` Displays clipboard history (`CTRL + OPT + CMD + V` on my machine)
+- `CPL` Caps Lock
+
+## Layer 1
+
+![](images/1.svg)
+
+On non-home keys, inputs are carefully coordinated with their layer toggle key in four different ways:
+
+1. The left hand of layer 1 is duplicated on the left hand of layer 2. This allows nav inputs to be used both in the more ergonomic two-handed mode via layer 2 (right hand toggles layer, left hand presses nav input) as well as in one-handed mode when the my right hand is resting on a mouse.
+2. QWERTY commands on layer 3 are also mouse-friendly one-handed, but no two-handed version of them exists as I use them less often.
+3. Inputs which are frequently used but are not susceptible to being used with a mouse are two-handed only (num pad, symbols…).
+4. Finally, inputs which are not used often and are also not susceptible to being used with the mouse are relegated to right-only one-handed use.
+
+Legend abbreviations:
+
+- `↖↑↗` mission control
+- `<<<`  `>>>` switch between screens
+- `^` `v` `<` `>` arrow cluster 
+- `<==` `==>` go back and forward
+
+## Layer 2
+
+![](images/2.svg)
+
+## Layer 3
+
+The QWERTY-commands on this layer are purely optional; Dvorak commands can of course be used on the home layer thanks to home-row mods.
+
+![](images/3.svg)
+
+
+## Layer 4
+
+![](images/4.svg)
+
+## Layer 5
+
+This layer is reserved for hardware-level inputs, such as reseting the controller or switching devices.
+![](images/5.svg)
+
+Legend abbreviations:
+
+- `FLS` put controller in bootloader mode for flashing
+- `RST` reset controller
+- `BTC` bluetooth clear profile
+- `BT0` send inputs to bluetooth device 0
+
+
+## All layers
+
+![](images/all-layers.svg)
+
+
 
 <!--
 
