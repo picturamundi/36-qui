@@ -23,6 +23,12 @@ How does this layout compare to the popular 36-key [Miryoku layout](https://gith
   - DVORAK alphas with optional [QWERTY command shortcuts](#layer-3).
 
 
+
+## All layers
+
+![](images/all-layers.svg)
+
+
 ## Layer 0
 
 Top set of keys display tap inputs, bottom set of keys display hold inputs.
@@ -88,11 +94,6 @@ Legend abbreviations:
 - `RST` reset controller
 - `BTC` bluetooth clear profile
 - `BT0` send inputs to bluetooth device 0
-
-
-## All layers
-
-![](images/all-layers.svg)
 
 
 
