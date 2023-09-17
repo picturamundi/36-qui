@@ -37,10 +37,6 @@ All layers have the following inputs in common:
 Top set of keys display tap inputs, bottom set of keys display hold inputs (+120ms for most keys).
 ![](images/00.svg)
 
-The following graphical key explains basic input types for both the home layer (layer 0) and other layers.
-
-![](images/legend.svg)
-
 Further explanation for layer 0:
 
 - `T1` - `T0` input `command-1` - `command-0` for switching to tabs in browsers, IDEs, etc.
