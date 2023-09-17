@@ -1,6 +1,6 @@
-# Pictura Keyboard Layout Manual
+# 36-QUI
 
-Pictura is a ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
+`36-QUI` is a ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
 For all information on how ZMK works, how to use this layout, how to edit it, and so on, see the official [ZMK documentation](https://zmk.dev/docs).
 
@@ -15,14 +15,12 @@ A couple of things you should know before using this firmware for yourself:
 
 - For commands with no dedicated ZMK key-code (e.g. navigate back and forward on webpages), I'm using shortcuts combos that work on my personal machine, but which will need to be customized for other devices. See the layout legend below if ever you're confused about what these shortcuts in the .keymap file are supposed to actually do.
 
-How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project put together by someone with no programming experience and only my own personal use in mind, here are nonetheless the crucial advantages for me: 
+How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is a much less fully-featured project put together by someone with no programming experience and with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
 
   - Tap-Shift for more effortless typing, with the additional option of a traditional hold-shift in the form of a home-row mod.
   - Tab-control on home-layer… in fact in general [there's just more that's directly accessible on the home layer](#layer-0).
   - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
   - DVORAK alphas with optional [QWERTY command shortcuts](#layer-3).
-
-
 
 ## All layers
 
