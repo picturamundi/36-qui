@@ -1,8 +1,8 @@
-# 36-QUI
+# 36-QUI ![](images/question-mark.png)
 
 `36-QUI` is a ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
-For all information on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs).
+For all information on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs)
 
 
 ## At a glance…
