@@ -9,7 +9,7 @@ For all information on how the ZMK firmware works, how to use this layout, how t
 
 A couple of things to know before using `36-QUI`:
 
-- This is a 36-key layout made with a wireless [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has a retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the .keymap file and swap this inner key with the middle thumb key for something like a Corne.
+- This layout is made with a wireless [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has a retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the .keymap file and swap this inner key with the middle thumb key for something like a Corne.
 
 ![microdox](images/microdox-bud.svg)
 
