@@ -1,19 +1,19 @@
 # 36-QUI ![](images/question-mark.png)
 
-`36-QUI` is a ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
+`36-QUI` is a 36-key ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
-For all information on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs)
+For all information on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs).
 
 
 ## At a glance…
 
-A couple of things you should know before using this layout for yourself:
+A couple of things to know before using `36-QUI`:
 
-- This is a 36-key layout made with a wireless [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has a retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the keymap and swap this inner key with the middle thumb key for something like a Corne.
+- This is a 36-key layout made with a wireless [Microdox](https://boardsource.xyz/store/5f2e7e4a2902de7151494f92) in mind. Since the Microdox has a retracted thumb-cluster, I treat the innermost key as the primary thumb key. It might be best to edit the .keymap file and swap this inner key with the middle thumb key for something like a Corne.
 
 ![microdox](images/microdox-bud.svg)
 
-- For commands with no dedicated ZMK key-code (e.g. navigate back and forward on webpages), I'm using shortcuts combos that work on my personal machine, but which will need to be customized for other devices. See the layout legend below if ever you're confused about what these shortcuts in the .keymap file are supposed to actually do.
+- For commands with no dedicated ZMK key-code (e.g. navigate back and forward on webpages), I'm using shortcuts combos that work on my personal machine, but which will need to be customized for other devices. See the layout legend below to confirm what these shortcuts in the .keymap file are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is obviously a much less fully-featured project put together by someone with no programming experience and with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
 
