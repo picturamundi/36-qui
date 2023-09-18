@@ -34,15 +34,15 @@
             bindings = <&kp>, <&kp>;
         };
         ch: clipboard-history {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD-TAP";
+            label = "CLIP-HISTORY";
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick_tap_ms = <200>;
             flavor = "tap-preferred";
             bindings = 
                 <&macro_press &kp LC(LA(LG(V)))>,
-                <&macro_tap &kp D>;
+                <&macro_tap &kp D>,
+                <&macro_release &kp LC(LA(LG(V)))>;
         };
         rmt: right-mod-tap {
             compatible = "zmk,behavior-hold-tap";
