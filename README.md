@@ -2,7 +2,7 @@
 
 `36-QUI` is a 36-key ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
-For all information on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs).
+For details on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs).
 
 
 ## At a glance…
@@ -13,12 +13,12 @@ A couple of things to know before using `36-QUI`:
 
 ![microdox](images/microdox-bud.svg)
 
-- For commands with no dedicated ZMK key-code (e.g. navigate back and forward on webpages), I'm using shortcuts combos that work on my personal machine, but which will need to be customized for other devices. See the layout legend below to confirm what these shortcuts in the .keymap file are supposed to actually do.
+- For commands with no dedicated ZMK key-code, I'm calling key combos which work on my personal machine, but which will need to be customized for other devices (e.g. `Cmd-Opt-Ctrl-V` for clipboard history). See the layout legend below to confirm what these macros in the .keymap file are supposed to actually do.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is obviously a much less fully-featured project put together by someone with no programming experience and with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
 
   - Tap-Shift for more effortless typing, with the additional option of a traditional hold-shift in the form of a home-row mod.
-  - Tab-control on home-layer… in fact in general [there's just more that's directly accessible on the home layer](#layer-0).
+  - Tab-control on home-layer… in fact in general [there's just more that's conveniently accessible directly from the home layer](#layer-0).
   - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
   - DVORAK alphas with optional [QWERTY command shortcuts](#layer-3).
 
@@ -39,10 +39,11 @@ Top set of keys display tap inputs, bottom set of keys display hold inputs (+120
 
 Further explanation for layer 0:
 
-- `T1` - `T0` input `command-1` - `command-0` for switching to tabs in browsers, IDEs, etc.
+- `T1` - `T0` input `command-1` - `command-0` for effortlessly switching to tabs in browsers, IDEs, etc.
 - `SFT`, `CTL` etc. are home row mods. Anyone who has tried to implement home row mods knows they can take quite a bit of configuration. Among other things, these parameters work well for me:
 	- Mods don't trigger if a key has been pressed in the last 100ms. This prevents triggering during fast typing in general.
 	- Left hand mods will more easily trigger when paired with right hand key taps and vice versa. This minimizes accidental triggers during rolling.
+- The symbols on the home layer are purely for convenience and are redundant: these symbols can also be accessed on dedicated symbol layers 3 and 4.
 
 Other legend abbreviations:
 
