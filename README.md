@@ -47,7 +47,8 @@ Further explanation for layer 0:
 
 Other legend abbreviations:
 
-- `CLP` Displays clipboard history (`CTRL + OPT + CMD + V` on my machine)
+- `CLB` Clipboard history (`CTRL + OPT + CMD + V` on my machine)
+- `SPL` Spotlight / Alfred / Raycast etc. (`CTRL + Space` on my machine)
 - `CPL` Caps Lock
 
 ## Layer 1
