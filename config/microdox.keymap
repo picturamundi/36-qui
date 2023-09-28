@@ -109,7 +109,7 @@
     keymap {
         compatible = "zmk,keymap";
         
-        alpha-en {
+        alpha-en { 
             bindings = <
                 // ╭───────────────┬──────────────────┬────────────────┬──────────────┬──────────────╮     ╭──────────────┬──────────────┬────────────────┬───────────────┬──────────────╮
                     &ht LG(N1) SQT  &ht LG(N2) COMMA    &ht LG(N3) DOT  &ht LG(N4) P    &ht LG(N5) Y        &ht LG(N6) F    &ht LG(N7) G    &ht LG(N8) C    &ht LG(N9) R    &ht LG(N0) L  
