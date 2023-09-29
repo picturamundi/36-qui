@@ -42,7 +42,10 @@
             quick_tap_ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            hold-trigger-key-positions =
+                <0 1 2 3 4 
+                10 11 12 13 14 
+                20 21 22 23 24>;
         };
         ml_t: mod-left_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -53,7 +56,10 @@
             flavor = "balanced";
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            hold-trigger-key-positions =
+                <5 6 7 8 9 
+                15 16 17 18 19 
+                25 26 27 28 29>;
         };
         sr_t: shift-right_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -64,7 +70,10 @@
             flavor = "balanced";
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24>;
+            hold-trigger-key-positions =
+                <0 1 2 3 4 
+                10 11 12 13 14 
+                20 21 22 23 24>;
         };
         sl_t: shift-left_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -75,7 +84,10 @@
             flavor = "balanced";
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29>;
+            hold-trigger-key-positions =
+                <5 6 7 8 9 
+                15 16 17 18 19 
+                25 26 27 28 29>;
         };
         l_st: layer_shift-tap {
             compatible = "zmk,behavior-hold-tap";
