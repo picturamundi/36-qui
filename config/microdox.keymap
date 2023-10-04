@@ -42,7 +42,7 @@
             quick_tap_ms = <100>;
             global-quick-tap; // hold will not trigger within quickt_tap ms of previous key press
             bindings = <&kp>, <&kp>;
-            hold-trigger-on-release; //allows using multiple mods on one hand
+            // hold-trigger-on-release; //allows using multiple mods on one hand
             hold-trigger-key-positions = // works with left hand only
                 <0 1 2 3 4 
                 10 11 12 13 14 
@@ -57,7 +57,7 @@
             quick_tap_ms = <100>;
             global-quick-tap;
             bindings = <&kp>, <&kp>;
-            hold-trigger-on-release;
+            // hold-trigger-on-release;
             hold-trigger-key-positions =
                 <5 6 7 8 9 
                 15 16 17 18 19 
