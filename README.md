@@ -2,7 +2,7 @@
 
 `36-QUI` is a 36-key ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
-For details on how the ZMK firmware works, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs).
+For details on what devices are compatible with ZMK, how to use this layout, how to edit it, and so on, see the [ZMK documentation](https://zmk.dev/docs).
 
 
 ## At a glance…
@@ -17,7 +17,7 @@ A couple of things to know before using `36-QUI`:
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is obviously a much less fully-featured project put together by someone with no programming experience and with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
 
-  - Tap-Shift for more effortless typing, with the additional option of a traditional hold-shift in the form of a home-row mod.
+  - Sticky shift for more effortless typing, with the additional option of a traditional hold shift in the form of a home-row mod.
   - Tab-control on home-layer… in fact in general [there's just more that's conveniently accessible directly from the home layer](#layer-0).
   - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
   - DVORAK alphas with optional [QWERTY command shortcuts](#layer-3).
@@ -28,6 +28,8 @@ All layers have the following inputs in common:
 
 - home row modifiers
 - thumb cluster space, return, and backspace
+
+Individual layers are documented further down.
 
 ![](images/all-layers.svg)
 
