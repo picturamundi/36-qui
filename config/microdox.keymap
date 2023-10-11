@@ -51,19 +51,19 @@
         };
         ml_t: mod-left_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT-MOD-TAP";
+            label = "MOD-LEFT-TAP";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
             quick_tap_ms = <100>;
             global-quick-tap;
-            bindings = <&kp>, <&kp>;
             hold-trigger-on-release;
+            bindings = <&kp>, <&kp>;
             hold-trigger-key-positions =
                 <5 6 7 8 9 
                 15 16 17 18 19 
                 25 26 27 28 29
-                34 35 36>;
+                34 35 36>; // These three don't seem to make any difference
         };
         sr_t: shift-right_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -133,7 +133,7 @@
                 // ├───────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &sl_t LSHFT LG(TAB) &ml_t LCTRL LEFT &ml_t LALT DOWN &ml_t LGUI RIGHT &kp TAB       &kp DOT         &mr_t RGUI N4   &mr_t RALT N5   &mr_t RCTRL N6  &trans         
                 // ├───────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &trans              &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans         
+                    &trans              &kp LG(LBKT)    &kb LG(R)       &kp LG(RBKT)    &kp ESC         &kp LS(N8)      &kp N1          &kp N2          &kp N3          &trans         
                 // ╰───────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
                                                         &trans          &trans          &trans          &kp SPACE       &kp RET         &kp BSPC                                       
                 //                                     ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────┴───────────────╯                               
@@ -147,7 +147,7 @@
                 // ├───────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
                     &sl_t LSHFT LG(TAB) &ml_t LCTRL LEFT &ml_t LALT DOWN &ml_t LGUI RIGHT &kp TAB       &kp HOME        &mr_t RGUI C_VOL_DN &mr_t RALT C_MUTE   &mr_t RCTRL C_VOL_UP &sr_t RSHFT  END    
                 // ├───────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────┤
-                    &trans              &kp LG(LBKT)    &trans          &kp LG(RBKT)    &kp ESC         &kp PG_UP       &kp C_BRI_DN        &trans              &kp C_BRI_UP        &kp PG_DN            
+                    &trans              &kp LG(LBKT)    &kb LG(R)       &kp LG(RBKT)    &kp ESC         &kp PG_UP       &kp C_BRI_DN        &trans              &kp C_BRI_UP        &kp PG_DN            
                 // ╰───────────────────┼───────────────┼───────────────┼───────────────┼─────────┤     ├───────────────┼───────────────────┼───────────────────┼───────────────────┼────────────────────╯
                                                         &kp BSPC        &kp RET         &kp SPACE       &trans          &trans              &trans                                                       
                 //                                     ╰───────────────┴───────────────┴─────────╯     ╰───────────────┴───────────────────┴───────────────────╯                                         
