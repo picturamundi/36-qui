@@ -67,7 +67,8 @@ Legend abbreviations:
 - `↖↑↗` mission control
 - `<<<`  `>>>` switch between screens
 - `^` `v` `<` `>` arrow cluster 
-- `<==` `==>` navigate back and forward on webpages etc.
+- `<=` `=>` navigate backward and forward on webpages etc.
+- `↻` Reload page (`Cmd + R` on my machine)
 
 ## Layer 2
 
