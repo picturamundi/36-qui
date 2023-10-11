@@ -42,9 +42,7 @@ Top set of keys display tap inputs, bottom set of keys display hold inputs (+120
 Further explanation for layer 0:
 
 - `T1` - `T0` input `command-1` - `command-0` for effortlessly switching to tabs in browsers, IDEs, etc.
-- `SFT`, `CTL` etc. are home row mods. Anyone who has tried to implement home row mods knows they can take quite a bit of configuration. Among other things, these parameters work well for me:
-	- Mods don't trigger if a key has been pressed in the last 100ms. This prevents triggering during fast typing in general.
-	- Left hand mods will more easily trigger when paired with right hand key taps and vice versa. This minimizes accidental triggers during rolling.
+- `SFT`, `CTL` etc. are home row mods. Anyone who has tried to implement home row mods knows they can take quite a bit of configuration. I have implemented mine more or less along the lines of [urob’s “timerless” configuration](https://github.com/urob/zmk-config#timeless-homerow-mods).
 - The symbols on the home layer are purely for convenience and are redundant: these symbols can also be accessed on dedicated symbol layers 3 and 4.
 
 Other legend abbreviations:
