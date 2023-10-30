@@ -64,13 +64,13 @@ On non-home layers, inputs are carefully coordinated with their layer's toggle k
 
 Legend abbreviations:
 
-- `<<<`  `>>>` switch between screens
+- `<<<`  `>>>` navigate between screens
 - `↖↑↗` mission control
 - `↔` switch between active app windows
 - `⇆` switch between two most recent apps
-- `<=` `=>` navigate backward and forward on webpages etc.
-- `↻` Reload page (`Cmd + R` on my machine)
-- `^` `v` `<` `>` arrow cluster 
+- `<=` `=>` navigate backward and forward on webpages, indent text
+- `↻` Reload webpage
+- `^` `v` `<` `>` arrow cluster
 
 ## Layer 2
 
