@@ -14,6 +14,7 @@ A couple of things to know before using `36-QUI`:
 ![microdox](images/microdox-bud.svg)
 
 - For commands with no dedicated ZMK key-code, I'm calling key combos which work on my personal machine, but which will need to be customized for other devices (e.g. `Cmd-Opt-Ctrl-V` for clipboard history). See the layout legend below to confirm what these macros in the .keymap file are supposed to actually do.
+- The home layer is currently Dvorak, but of course this is not essential to the config's core features and can be changed.
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is obviously a much less fully-featured project put together by someone with no programming experience and with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
 
