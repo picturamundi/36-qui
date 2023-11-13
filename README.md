@@ -57,9 +57,9 @@ Other legend abbreviations:
 
 ![](images/1.svg)
 
-On non-home layers, inputs are carefully coordinated with their layer's toggle key in four different ways:
+On non-home layers, inputs are carefully coordinated with their layer's activating key in four different ways:
 
-1. The left hand of layer 1 is duplicated on the left hand of layer 2. This allows nav inputs to be used both in the more ergonomic two-handed mode via layer 2 (right hand toggles layer, left hand presses nav input) as well as in one-handed mode via layer 1 when my right hand is resting on a mouse.
+1. The left hand of layer 1 is duplicated on the left hand of layer 2. This allows nav inputs to be used both in the more ergonomic two-handed mode via layer 2 (right hand activates layer, left hand presses nav input) as well as in one-handed mode via layer 1 when my right hand is resting on a mouse.
 2. QWERTY commands on layer 3 are also mouse-friendly one-handed, but no two-handed version of them exists as I use them less often.
 3. Inputs which are frequently used but are not susceptible to being used with a mouse are two-handed only (num pad, symbols…).
 4. Finally, inputs which are not used often and are also not susceptible to being used with the mouse are relegated to right-only one-handed use.
