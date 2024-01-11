@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: microdox_v2_left
+    shield: microdox_left
   - board: nice_nano_v2
-    shield: microdox_v2_right
+    shield: microdox_right
   - board: nice_nano_v2
     shield: settings_reset
