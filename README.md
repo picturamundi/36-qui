@@ -43,7 +43,7 @@ Top set of keys display tap inputs, bottom set of keys display hold inputs (+120
 
 Further explanation for layer 0:
 
-- `T1` - `T0` input `command-1` - `command-0` for effortlessly switching to tabs in browsers, IDEs, etc.
+- `⌘1` - `⌘0` are for effortlessly switching to tabs in browsers, IDEs, etc.
 - `SFT`, `CTL` etc. are home row mods. Anyone who has tried to implement home row mods knows they can take quite a bit of complex tweaking. I have implemented mine more or less along the lines of [urob’s “timerless” configuration](https://github.com/urob/zmk-config#timeless-homerow-mods).
 - The symbols on the home layer are purely for convenience and are redundant: these symbols can also be accessed on dedicated symbol layers 3 and 4.
 
@@ -66,13 +66,12 @@ On non-home layers, inputs are carefully coordinated with their layer's activati
 
 Legend abbreviations:
 
-- `<<<`  `>>>` navigate between screens
-- `↖↑↗` mission control
-- `↔` switch between active app windows
-- `⇆` switch between two most recent apps
 - `<=` `=>` navigate backward and forward on webpages, indent text
-- `↻` Reload webpage
-- `^` `v` `<` `>` arrow cluster
+- `<`  `>` navigate between desktops and fullscreen apps and
+- `↑` `↓` `←` `→` arrow cluster
+- `[four boxes]` mission control
+- `[two boxes]` show all windows in current app
+- `❊` show desktop
 
 ## Layer 2
 
@@ -93,7 +92,7 @@ The symbols on layer 3 are matched with the numbers on layer 1 in the same way t
 
 ## Layer 5
 
-This layer is reserved for hardware-level inputs, such as reseting the controller or switching devices.
+This layer is reserved for hardware-level inputs, such as resetting the controller or switching devices.
 ![](images/5.svg)
 
 Legend abbreviations:
