@@ -19,7 +19,6 @@
 // &mwh {
 //     time-to-max-speed-ms = <2000>;
 //     acceleration-exponent=<1>;
-
 // };
 
 / {
@@ -139,9 +138,9 @@
     nav-num {
             bindings = <
                 // ╭───────────────────┬───────────────────────┬───────────────┬───────────────────┬───────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬──────────────╮
-                    &kp LG(R)           &kp LG(LBKT)            &kp UP          &kp LG(RBKT)        &kp LG(TAB)     &h_t  SLASH COMMA &kp N7          &kp N8          &kp N9          &kp MINUS      
+                    &kp LG(R)           &kp LA(LG(LEFT))            &kp UP          &kp LA(LG(RIGHT))        &kp LG(TAB)     &h_t  SLASH COMMA &kp N7          &kp N8          &kp N9          &kp MINUS      
                 // ├───────────────────┼───────────────────────┼───────────────┼───────────────────┼───────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
-                    &sl_t LSHFT LA(LG(DOWN)) &ml_t LCTRL LA(LG(LEFT)) &ml_t LALT LA(LG(UP)) &ml_t LGUI LA(LG(RIGHT)) &kp ESC     &h_t LS(N8) DOT &mr_t RGUI N4   &mr_t RALT N5   &mr_t RCTRL N6  &sr_t RSHFT PLUS
+                    &sl_t LSHFT LA(LG(DOWN)) &ml_t LCTRL LG(LBKT) &ml_t LALT LA(LG(UP)) &ml_t LGUI LG(RBKT) &kp ESC     &h_t LS(N8) DOT &mr_t RGUI N4   &mr_t RALT N5   &mr_t RCTRL N6  &sr_t RSHFT PLUS
                 // ├───────────────────┼───────────────────────┼───────────────┼───────────────────┼───────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────┤
                     &kp  LC(LA(LG(DOWN)))         &kp LEFT                &kp DOWN        &kp RIGHT           &kp CAPS       &kp N0          &kp N1          &kp N2          &kp N3          &kp ENTER
                 // ╰───────────────────┼───────────────────────┼───────────────┼───────────────────┼───────────┤   ├───────────────┼───────────────┼───────────────┼───────────────┼──────────────╯
