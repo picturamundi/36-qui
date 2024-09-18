@@ -19,8 +19,8 @@ A few things to know before using `36-QUI`:
 
 How does this layout compare to the popular 36-key [Miryoku layout](https://github.com/manna-harbour/miryoku/tree/master/docs/reference)? With the understanding that this is obviously a much less fully-featured project put together by someone with no programming experience and with only my own personal use in mind, here are nonetheless the crucial advantages for me: 
 
-  - Sticky shift for more effortless typing, with the additional option of a traditional hold shift in the form of a home-row mod.
-  - Tab-control on home-layer… in fact in general [there's just more that's conveniently accessible directly from the home layer](#layer-0).
+  - Sticky shift for more ergonomic uppercase letters, with the additional option of a traditional hold shift in the form of a home-row mod.
+  - Tab-control on home-layer… in fact in general [there's just more that's accessible directly from the home layer](#layer-0).
   - One-handed layers for mouse-friendly use, with the additional option of two-handed use of the same inputs when that's more ergonomic.
   - DVORAK alphas with optional [QWERTY command shortcuts](#layer-3).
 
@@ -43,7 +43,7 @@ Top set of keys display tap inputs, bottom set of keys display hold inputs (+120
 
 Further explanation for layer 0:
 
-- `⌘1` - `⌘0` are for effortlessly switching to tabs in browsers, IDEs, etc.
+- `⌘1` - `⌘0` are for switching to tabs in browsers, IDEs, etc.
 - `SFT`, `CTL` etc. are home row mods. Anyone who has tried to implement home row mods knows they can take quite a bit of complex tweaking. I have implemented mine more or less along the lines of [urob’s “timerless” configuration](https://github.com/urob/zmk-config#timeless-homerow-mods).
 - The symbols on the home layer are purely for convenience and are redundant: these symbols can also be accessed on dedicated symbol layers 3 and 4.
 
