@@ -1,4 +1,4 @@
-# 36-QUI ![](images/question-mark.png)
+# 36-QUI ![](images/question-mark.png) 
 
 `36-QUI` is a 36-key ergonomic keyboard layout compatible with devices running the ZMK keyboard firmware.
 
